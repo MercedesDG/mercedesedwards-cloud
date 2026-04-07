@@ -1,8 +1,17 @@
 import { Linkedin, Mail, FileText } from "lucide-react";
 
+import worldMapBg from "@/assets/world-map-bg.png";
+
 const Footer = () => (
-  <footer id="contact" className="py-20 md:py-28">
-    <div className="container max-w-4xl mx-auto px-6 text-center">
+  <footer id="contact" className="relative py-20 md:py-28 overflow-hidden">
+    <img
+      src={worldMapBg}
+      alt=""
+      className="absolute inset-0 w-full h-full object-cover opacity-40"
+      width={1920}
+      height={1080}
+    />
+    <div className="relative z-10 container max-w-4xl mx-auto px-6 text-center">
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
         Mercedes D. Edwards
       </h2>
