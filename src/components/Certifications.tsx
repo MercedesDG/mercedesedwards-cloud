@@ -22,7 +22,7 @@ const Certifications = () => {
   }, []);
 
   return (
-    <section id="certifications" className="py-24 md:py-32 bg-secondary">
+    <section id="certifications" className="py-24 md:py-32 bg-background">
       <div
         ref={ref}
         className={`container max-w-4xl mx-auto px-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
