@@ -6,7 +6,7 @@ const Footer = () => (
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
         Mercedes D. Edwards
       </h2>
-      <p className="font-sans text-lg text-muted-foreground mb-10 max-w-lg mx-auto">
+      <p className="font-sans text-xl text-muted-foreground mb-10 max-w-lg mx-auto">
         Helping enterprises integrate AI into complex systems.
       </p>
       <div className="flex items-center justify-center gap-8 mb-16">

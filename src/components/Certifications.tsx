@@ -40,7 +40,7 @@ const Certifications = () => {
               className={`flex items-center justify-between py-5 border-b border-border transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              <span className="font-sans text-base sm:text-lg text-foreground">
+              <span className="font-sans text-lg sm:text-xl text-foreground">
                 {c.name}
               </span>
               <span
