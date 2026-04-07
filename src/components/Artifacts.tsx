@@ -33,26 +33,26 @@ const Artifacts = () => {
   }, []);
 
   return (
-    <section id="artifacts" className="py-24 md:py-32 bg-primary text-primary-foreground">
+    <section id="artifacts" className="py-24 md:py-32 bg-accent">
       <div ref={ref} className="container max-w-5xl mx-auto px-6">
-        <p className={`font-sans text-sm editorial-spacing uppercase text-accent mb-4 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <p className={`font-sans text-sm editorial-spacing uppercase text-primary-foreground/70 mb-4 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           Resources
         </p>
-        <h2 className={`font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-4 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <h2 className={`font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-primary-foreground mb-4 transition-all duration-700 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           Architecture Artifacts
         </h2>
-        <p className={`font-sans text-lg text-primary-foreground/70 mb-16 max-w-2xl transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <p className={`font-sans text-lg text-foreground/80 mb-16 max-w-2xl transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           Decision documents, roadmaps, and governance frameworks — the work behind the diagrams.
         </p>
         <div className="grid sm:grid-cols-2 gap-6">
           {artifacts.map((a, i) => (
             <div
               key={a.title}
-              className={`p-8 rounded-lg border border-primary-foreground/10 hover:border-accent/50 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`p-8 rounded-lg border border-primary-foreground/20 hover:border-primary-foreground/40 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${(i + 3) * 100}ms` }}
             >
-              <h3 className="font-serif text-2xl font-bold mb-3">{a.title}</h3>
-              <p className="font-sans text-base text-primary-foreground/60 leading-relaxed">
+              <h3 className="font-serif text-2xl font-bold mb-3 text-foreground">{a.title}</h3>
+              <p className="font-sans text-base text-foreground/70 leading-relaxed">
                 {a.description}
               </p>
             </div>
