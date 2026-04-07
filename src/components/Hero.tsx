@@ -9,7 +9,7 @@ const Hero = () => {
       <img
         src={worldMapBg}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
+        className="absolute inset-0 w-full h-full object-cover opacity-60"
         width={1920}
         height={1080}
       />
