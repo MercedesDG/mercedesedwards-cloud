@@ -59,7 +59,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       className={`bg-background rounded-lg p-8 md:p-10 border border-border transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <span className="inline-block px-3 py-1 rounded-full border border-accent text-accent font-sans text-xs editorial-spacing uppercase mb-6">
+      <span className="inline-block px-3 py-1 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase mb-6">
         {project.industry}
       </span>
       <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-2">
@@ -85,7 +85,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         <span
           className={`inline-block px-3 py-1 rounded-full font-sans text-xs editorial-spacing uppercase ${
             project.status === "Architecture In Progress"
-              ? "bg-accent/20 text-accent"
+              ? "bg-accent/20 text-muted-foreground"
               : "bg-muted text-muted-foreground"
           }`}
         >
@@ -111,7 +111,7 @@ const Portfolio = () => (
         Portfolio
       </p>
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-        Projects
+        Prototypes
       </h2>
       <p className="font-sans text-lg text-muted-foreground mb-16 max-w-2xl">
         Three projects. One lifecycle. Build it. Scale it. Keep it running.

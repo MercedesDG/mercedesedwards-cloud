@@ -52,7 +52,7 @@ const About = () => {
           {specialties.map((s) => (
             <span
               key={s}
-              className="px-4 py-2 rounded-full border border-accent text-accent font-sans text-sm editorial-spacing uppercase"
+              className="px-4 py-2 rounded-full border border-accent text-muted-foreground font-sans text-sm editorial-spacing uppercase"
             >
               {s}
             </span>
