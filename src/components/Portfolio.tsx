@@ -68,7 +68,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       <p className="font-sans text-base text-accent font-medium mb-4">
         {project.subtitle}
       </p>
-      <p className="font-sans text-base leading-relaxed text-muted-foreground mb-6">
+      <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-6">
         {project.description}
       </p>
       <div className="flex flex-wrap gap-2 mb-6">
@@ -111,7 +111,7 @@ const Portfolio = () => (
         Portfolio
       </p>
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-        Selected Work
+        Projects
       </h2>
       <p className="font-sans text-lg text-muted-foreground mb-16 max-w-2xl">
         Three projects. One lifecycle. Build it. Scale it. Keep it running.

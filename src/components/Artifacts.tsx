@@ -1,24 +1,19 @@
 import { useEffect, useRef, useState } from "react";
-import { FileText, Map, Layers, Shield } from "lucide-react";
 
 const artifacts = [
   {
-    icon: FileText,
     title: "Executive Summary",
     description: "Architecture philosophy, core competencies, and approach — Coming Soon",
   },
   {
-    icon: Map,
     title: "Technology Roadmaps",
     description: "Multi-year infrastructure evolution aligned with business milestones — Coming Soon",
   },
   {
-    icon: Layers,
     title: "Reference Architectures",
     description: "Reusable patterns for regulated AI integration and event-driven systems — Coming Soon",
   },
   {
-    icon: Shield,
     title: "Governance & Compliance",
     description: "Audit frameworks, consent models, and security architecture — Coming Soon",
   },
@@ -56,9 +51,8 @@ const Artifacts = () => {
               className={`p-8 rounded-lg border border-primary-foreground/10 hover:border-accent/50 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{ transitionDelay: `${(i + 3) * 100}ms` }}
             >
-              <a.icon className="w-8 h-8 text-accent mb-4" />
-              <h3 className="font-serif text-xl font-bold mb-2">{a.title}</h3>
-              <p className="font-sans text-sm text-primary-foreground/60 leading-relaxed">
+              <h3 className="font-serif text-2xl font-bold mb-3">{a.title}</h3>
+              <p className="font-sans text-base text-primary-foreground/60 leading-relaxed">
                 {a.description}
               </p>
             </div>
