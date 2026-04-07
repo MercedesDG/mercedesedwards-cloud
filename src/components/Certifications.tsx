@@ -46,7 +46,7 @@ const Certifications = () => {
               <span
                 className={`font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full ${
                   c.status === "In Progress"
-                    ? "bg-accent/20 text-accent"
+                    ? "bg-accent/20 text-muted-foreground"
                     : "bg-muted text-muted-foreground"
                 }`}
               >

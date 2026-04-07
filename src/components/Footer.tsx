@@ -20,13 +20,15 @@ const Footer = () => (
       </p>
       <div className="flex items-center justify-center gap-8 mb-16">
         <a
-          href="#"
+          href="https://www.linkedin.com/in/mercedes-edwards"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 font-sans text-sm editorial-spacing uppercase text-foreground hover:text-accent transition-colors"
         >
           <Linkedin className="w-4 h-4" /> LinkedIn
         </a>
         <a
-          href="#"
+          href="mailto:me@mercedesedwards.cloud"
           className="flex items-center gap-2 font-sans text-sm editorial-spacing uppercase text-foreground hover:text-accent transition-colors"
         >
           <Mail className="w-4 h-4" /> Email
