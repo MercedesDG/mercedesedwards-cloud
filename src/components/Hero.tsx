@@ -14,24 +14,24 @@ const Hero = () => {
         height={1080}
       />
       <div className="relative z-10 text-center px-6">
-        <p className="font-sans text-sm editorial-spacing uppercase tracking-widest text-muted-foreground mb-6 animate-fade-in-up">
-          AI &amp; Cloud Architecture
-        </p>
-        <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-foreground leading-none mb-4 animate-fade-in-up animate-delay-100">
-          Mercedes D.
+        <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-none mb-6 animate-fade-in-up">
+          Mercedes D. Edwards
         </h1>
-        <h1 className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-foreground leading-none mb-8 animate-fade-in-up animate-delay-200">
-          Edwards
-        </h1>
-        <p className="font-sans text-lg sm:text-xl editorial-spacing uppercase text-muted-foreground animate-fade-in-up animate-delay-300">
+        <p className="font-sans text-xl sm:text-2xl font-bold editorial-spacing uppercase text-foreground animate-fade-in-up animate-delay-100">
           AI &amp; Cloud Architect
         </p>
-        <div className="mt-12 animate-fade-in-up animate-delay-400">
+        <div className="mt-12 flex items-center justify-center gap-4 animate-fade-in-up animate-delay-200">
           <a
             href="#about"
             className="inline-block border border-foreground px-8 py-3 font-sans text-sm editorial-spacing uppercase text-foreground hover:bg-foreground hover:text-primary-foreground transition-colors duration-300"
           >
             Explore Portfolio
+          </a>
+          <a
+            href="#"
+            className="inline-block bg-foreground text-primary-foreground px-8 py-3 font-sans text-sm editorial-spacing uppercase hover:bg-accent transition-colors duration-300"
+          >
+            Download Resume
           </a>
         </div>
       </div>

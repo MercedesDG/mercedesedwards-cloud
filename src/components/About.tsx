@@ -31,7 +31,7 @@ const About = () => {
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-10">
           The Architect
         </h2>
-        <div className="space-y-6 font-sans text-base sm:text-lg leading-relaxed text-muted-foreground">
+        <div className="space-y-6 font-sans text-lg sm:text-xl leading-relaxed text-muted-foreground">
           <p>
             I'm an AI & Cloud Architect focused on what happens when AI meets real-world complexity — regulated industries, legacy systems, and the operational demands that come after launch day.
           </p>
@@ -45,7 +45,7 @@ const About = () => {
             Currently pursuing AWS certifications and building hands-on projects grounded in realistic business problems, real constraints, and defensible architecture decisions.
           </p>
           <p className="text-foreground font-medium">
-            Based in London. Targeting Miami, open to New York.
+            Currently based in London with the right to work in the U.S. and U.K. — targeting Miami and south Florida, open to NY.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 mt-10">
