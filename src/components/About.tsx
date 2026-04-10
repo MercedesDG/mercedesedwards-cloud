@@ -4,6 +4,7 @@ const specialties = [
   "Legacy Integration",
   "Agentic AI Security",
   "AI Operations & Observability",
+  "Governance & Knowledge Management",
 ];
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
         </h2>
         <div className="space-y-6 font-sans text-lg sm:text-xl leading-relaxed text-muted-foreground">
           <p>
-            I am an AI & Cloud Architect focused on what happens when AI meets real-world complexity — regulated industries, legacy systems, and the operational demands that come after launch day.
+            I am an AI & Cloud Architect focused on what happens when AI meets real-world complexity — regulated industries, legacy systems, and the operational demands that come after launch day. My experience in governance architecture and enablement program design means I don't just build systems — I build the structures that help organizations learn and operate within them.
           </p>
           <p>
             With a background in enterprise consulting and business analysis, I bring a client-first approach to architecture. My portfolio spans healthcare, retail, and supply chain, covering the full AI lifecycle: building secure agentic systems, designing event-driven architectures for global operations, and ensuring reliability in production.
@@ -45,7 +46,7 @@ const About = () => {
             Actively pursuing AWS certifications and building hands-on projects grounded in realistic business problems, real constraints, and defensible architecture decisions.
           </p>
           <p className="text-foreground font-medium">
-            Currently based in London with the right to work in the U.S. and U.K. — targeting Miami and south Florida, open to NY.
+            Currently based in London with the right to work in the U.S. and U.K. — targeting New York and Miami
           </p>
         </div>
         <div className="flex flex-wrap gap-3 mt-10">

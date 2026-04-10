@@ -16,7 +16,7 @@ const Footer = () => (
         Mercedes D. Edwards
       </h2>
       <p className="font-sans text-xl text-muted-foreground mb-10 max-w-lg mx-auto">
-        Helping enterprises integrate AI into complex systems.
+        Helping organizations govern, enable, and scale with AI.
       </p>
       <div className="flex items-center justify-center gap-8 mb-16">
         <a
@@ -42,7 +42,7 @@ const Footer = () => (
       </div>
       <div className="section-divider mb-8" />
       <p className="font-sans text-xs text-muted-foreground">
-        © 2025 Mercedes D. Edwards. All rights reserved.
+        © 2026 Mercedes D. Edwards. All rights reserved.
       </p>
     </div>
   </footer>
