@@ -1,21 +1,36 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
-const artifacts = [
+interface Artifact {
+  title: string;
+  description: string;
+  status: "View Document" | "Coming Soon";
+  link?: string;
+}
+
+const artifacts: Artifact[] = [
   {
     title: "Executive Summary",
-    description: "Architecture philosophy, core competencies, and approach — Coming Soon",
+    description: "Architecture philosophy, core competencies, and approach",
+    status: "View Document",
+    link: "/artifacts/executive-summary",
   },
   {
     title: "Technology Roadmaps",
     description: "Multi-year infrastructure evolution aligned with business milestones — Coming Soon",
+    status: "Coming Soon",
   },
   {
     title: "Reference Architectures",
     description: "Reusable patterns for regulated AI integration and event-driven systems — Coming Soon",
+    status: "Coming Soon",
   },
   {
     title: "Governance & Compliance",
-    description: "Audit frameworks, consent models, and security architecture — Coming Soon",
+    description: "Audit frameworks, consent models, and security architecture",
+    status: "View Document",
+    link: "/artifacts/governance",
   },
 ];
 
@@ -45,18 +60,49 @@ const Artifacts = () => {
           Decision documents, roadmaps, and governance frameworks — the work behind the diagrams.
         </p>
         <div className="grid sm:grid-cols-2 gap-6">
-          {artifacts.map((a, i) => (
-            <div
-              key={a.title}
-              className={`p-8 rounded-lg border border-border hover:border-accent transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-              style={{ transitionDelay: `${(i + 3) * 100}ms` }}
-            >
-              <h3 className="font-serif text-2xl font-bold mb-3 text-foreground">{a.title}</h3>
-              <p className="font-sans text-base text-muted-foreground leading-relaxed">
-                {a.description}
-              </p>
-            </div>
-          ))}
+          {artifacts.map((a, i) => {
+            const inner = (
+              <>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-serif text-2xl font-bold text-foreground">{a.title}</h3>
+                  {a.status === "View Document" && (
+                    <ArrowRight className="w-5 h-5 text-accent" />
+                  )}
+                </div>
+                <p className="font-sans text-base text-muted-foreground leading-relaxed mb-4">
+                  {a.description}
+                </p>
+                <span
+                  className={`inline-block font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full ${
+                    a.status === "View Document"
+                      ? "bg-accent/20 text-accent"
+                      : "bg-muted text-muted-foreground"
+                  }`}
+                >
+                  {a.status}
+                </span>
+              </>
+            );
+
+            return a.link ? (
+              <Link
+                key={a.title}
+                to={a.link}
+                className={`block p-8 rounded-lg border border-border hover:border-accent transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                style={{ transitionDelay: `${(i + 3) * 100}ms` }}
+              >
+                {inner}
+              </Link>
+            ) : (
+              <div
+                key={a.title}
+                className={`p-8 rounded-lg border border-border transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                style={{ transitionDelay: `${(i + 3) * 100}ms` }}
+              >
+                {inner}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
