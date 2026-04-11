@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercedes Edwards — Resume</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: #2A2A2A; background: #fff; }
+
+  header { 
+    background-image: url('YOUR_IMAGE_URL_HERE');
+    background-size: cover;
+    background-position: center;
+    padding: 28px 36px 22px; 
+    border-bottom: 2px solid #000; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(210, 213, 208, 0.75);
+    pointer-events: none;
+  }
+  header h1, header p, .header-tagline { position: relative; z-index: 1; }
+
+  header h1 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #000; letter-spacing: 1px; margin-bottom: 4px; }
+  .header-tagline { font-family: 'Playfair Display', serif; font-size: 12px; color: #2A2A2A; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; font-weight: 700; }
+  header p { font-size: 11.5px; color: #2A2A2A; letter-spacing: 0.3px; line-height: 1.8; font-weight: 700; }
+  header a { color: #000; text-decoration: none; font-weight: 700; }
+  header p.auth { font-size: 11px; color: #2A2A2A; margin-top: 2px; font-weight: 700; }
+
+  .body { display: flex; min-height: calc(100vh - 120px); }
+
+  /* Sidebar */
+  .sidebar { width: 215px; min-width: 215px; background: #F5F0E8; padding: 26px 18px; }
+  .sidebar-section { margin-bottom: 24px; }
+  .sidebar h3 { font-family: 'Playfair Display', serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #000; border-bottom: 1px solid #000; padding-bottom: 5px; margin-bottom: 10px; font-weight: 600; }
+  .sidebar ul { list-style: none; }
+  .sidebar ul li { font-size: 11px; color: #2A2A2A; margin-bottom: 7px; line-height: 1.4; padding-left: 8px; border-left: 2px solid #be6c35; font-weight: 400; }
+
+  .skill-group { margin-bottom: 10px; }
+  .skill-group .skill-label { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.8px; color: #000; margin-bottom: 3px; font-weight: 600; font-family: 'Playfair Display', serif; }
+  .skill-group .skill-items { font-size: 10.5px; color: #2A2A2A; line-height: 1.5; font-weight: 400; }
+
+  /* Main */
+  .main { flex: 1; padding: 26px 30px; background: #fff; }
+  .section { margin-bottom: 22px; }
+  .section h2 { font-family: 'Playfair Display', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #000; border-bottom: 1.5px solid #000; padding-bottom: 4px; margin-bottom: 12px; font-weight: 700; }
+
+  .profile-text { font-size: 12px; line-height: 1.7; color: #2A2A2A; font-weight: 400; }
+
+  .entry { margin-bottom: 14px; }
+  .entry-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1px; }
+  .entry-org { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 13px; color: #000; }
+  .entry-date { font-size: 10.5px; color: #666; white-space: nowrap; margin-left: 8px; font-weight: 300; }
+  .entry-title { font-style: italic; font-size: 11.5px; color: #be6c35; margin-bottom: 4px; font-weight: 400; }
+  .entry-desc { font-size: 11.5px; color: #2A2A2A; line-height: 1.6; margin-bottom: 4px; font-weight: 400; }
+  .entry ul { padding-left: 14px; margin-top: 3px; }
+  .entry ul li { font-size: 11.5px; color: #2A2A2A; line-height: 1.6; margin-bottom: 3px; font-weight: 400; }
+
+  .edu-entry { margin-bottom: 12px; }
+  .edu-entry .edu-program { font-style: italic; font-size: 11.5px; color: #be6c35; font-weight: 400; margin-bottom: 3px; }
+  .edu-entry .edu-desc { font-size: 11px; color: #2A2A2A; line-height: 1.5; margin-top: 3px; font-weight: 400; }
+
+  .download-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    border: 1px solid #be6c35;
+    background: transparent;
+    color: #be6c35;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .download-btn:hover {
+    background: #be6c35;
+    color: #fff;
+  }
+  .download-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  @media print {
+    body { font-size: 11px; }
+    header { padding: 18px 26px; }
+    .main { padding: 18px 22px; }
+    .sidebar { padding: 18px 14px; }
+    .download-btn { display: none; }
+  }
+</style>
+</head>
+<body>
+<button class="download-btn" onclick="window.print()">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  Download PDF
+</button>
+
+<header>
+  <h1>Mercedes D. Edwards</h1>
+  <div class="header-tagline">Solutions Architect — AI & Cloud Enablement</div>
+  <p>London, U.K. (Relocating to U.S.) &nbsp;|&nbsp; +44 744 818 1424 &nbsp;|&nbsp; <a href="mailto:me@mercedesedwards.cloud">me@mercedesedwards.cloud</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mercedes-edwards">LinkedIn</a> &nbsp;|&nbsp; <a href="https://mercedes-edwards.medium.com">Medium</a> &nbsp;|&nbsp; <a href="https://www.mercedesedwards.cloud">Portfolio</a></p>
+  <p class="auth">Authorized to work: U.S. &amp; U.K.</p>
+</header>
+
+<div class="body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-section">
+      <h3>Certifications</h3>
+      <ul>
+        <li>AWS Certified AI Practitioner — Expected Apr 2026</li>
+        <li>AWS Certified Solutions Architect Associate — Expected May 2026</li>
+        <li>Lean Six Sigma Green Belt</li>
+        <li>Process Improvement Specialist</li>
+        <li>SQL — Introduction &amp; Advanced</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Technical Skills</h3>
+      <div class="skill-group">
+        <div class="skill-label">Cloud & Architecture</div>
+        <div class="skill-items">AWS (EC2, S3, VPC, IAM, Lambda, RDS, DynamoDB, CloudWatch, CloudFormation), System Design, Well-Architected Framework</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">AI / ML</div>
+        <div class="skill-items">Generative AI Architecture, Foundation Models, RAG, Amazon Bedrock, SageMaker (foundational), Prompt Engineering &amp; Optimization</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">Programming & Automation</div>
+        <div class="skill-items">Python, TypeScript, Bash, Infrastructure as Code (Terraform, AWS CDK), CI/CD Pipelines</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">Data & Governance</div>
+        <div class="skill-items">Data Modelling, Schema Mapping, SQL, ETL Concepts, Content Lifecycle Management, Compliance Frameworks</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">Platforms & Tools</div>
+        <div class="skill-items">ServiceNow, Salesforce CRM, AWS Console, Git, Allscripts EMR</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Core Competencies</h3>
+      <ul>
+        <li>Enablement Program Design</li>
+        <li>Knowledge Management</li>
+        <li>Business &amp; Systems Analysis</li>
+        <li>Process Architecture &amp; Governance</li>
+        <li>Requirements Engineering</li>
+        <li>Workshop Facilitation</li>
+        <li>Stakeholder Management</li>
+        <li>Change Management</li>
+        <li>UAT &amp; Quality Assurance</li>
+        <li>Mentorship &amp; Coaching</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Languages</h3>
+      <ul>
+        <li>English — Native</li>
+      </ul>
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <div class="section">
+      <h2>Profile</h2>
+      <p class="profile-text">Solutions architect with a foundation in business analysis, process governance, and enterprise technology consulting. Experienced in designing enablement systems, governance frameworks, and scalable operational workflows across complex, multi-stakeholder environments. Proven ability to translate organizational pain points into structured solutions — from commercial governance architectures serving 50+ member sales teams to AI-powered automation workflows for client-facing professionals. Brings deep expertise in the full enablement lifecycle — analysis, design, development, implementation, and evaluation — combined with AWS cloud architecture and generative AI capabilities.</p>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">BRND United</span>
+          <span class="entry-date">Jul 2025 – Present &nbsp;|&nbsp; Remote</span>
+        </div>
+        <div class="entry-title">Founder &amp; Principal Consultant</div>
+        <p class="entry-desc">Technology and business consulting practice advising small business owners on brand strategy, AI integration, and operational process improvement. Specializes in embedding AI tools into client workflows to drive efficiency and improved outcomes.</p>
+        <ul>
+          <li>Designed and deployed an AI-assisted lead capture and client management solution for real estate professionals, integrating existing technologies into a cohesive automated workflow</li>
+          <li>Developed and delivered prompt engineering training for non-technical professionals — designing, testing, and iterating prompts to optimize LLM outputs for business applications including content creation, client communications, and workflow automation</li>
+
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">The Process Play</span>
+          <span class="entry-date">May 2023 – Sep 2024 &nbsp;|&nbsp; London, U.K.</span>
+        </div>
+        <div class="entry-title">Consultant — Business Analysis &amp; Enablement</div>
+        <p class="entry-desc">Business and process consultant delivering digital transformation and enablement projects across supply chain operations, HR service delivery, and IT service management within a ServiceNow implementation practice.</p>
+        <ul>
+          <li>Led workshop facilitation and requirements engineering across enterprise implementations, producing process maps, user stories, and systems analysis documentation aligned to operational outcomes</li>
+          <li>Managed a tri-party enablement partnership between ServiceNow, Northeastern University London, and The Process Play — redesigned the NextGen UK program curriculum around project-based learning and employability outcomes, achieving stronger engagement than prior cohorts</li>
+          <li>Contributed to a supply chain transformation consolidating fragmented order management from ERP and legacy systems into ServiceNow, with Salesforce CRM integration across ERP, document storage, and productivity systems</li>
+          <li>Facilitated discovery workshops for HR Service Delivery, ITSM, and Employee Center implementations, translating operational needs into structured process designs for development teams</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">LHH ICEO</span>
+          <span class="entry-date">Apr 2020 – Mar 2021 &nbsp;|&nbsp; London, U.K.</span>
+        </div>
+        <div class="entry-title">Operations Manager &nbsp;|&nbsp; VP, Diversity &amp; Inclusion Committee</div>
+        <p class="entry-desc">Led operations for a national career transition and executive coaching practice. Owned cross-functional process governance, operational enablement, and compliance across a 50+ member sales organization spanning the UK and Ireland.</p>
+        <ul>
+          <li>Architected and implemented a tiered commercial governance framework — introduced director-level review thresholds, digital contract workflows, and cross-functional approval processes across Sales, Finance, and Operations to replace an ungoverned contracting environment</li>
+          <li>Designed an Excel-based contract assessment tool enabling sales teams to self-determine approval requirements, reducing bottlenecks while enforcing governance compliance</li>
+          <li>Established a Commercial Governance Committee bringing together Sales, Finance, and Operations directors — creating the oversight structure needed for resource planning, financial feasibility review, and engagement quality control</li>
+          <li>Organized and migrated contracts into Salesforce with automated renewal alerts, recovering visibility into expiring agreements that were previously untracked</li>
+          <li>Increased practice revenue by 6% through improved client engagement and program adoption strategies</li>
+          <li>Designed and led COVID-19 return-to-office operational procedures, managing compliance with evolving government guidelines while maintaining service continuity</li>
+          <li>Created a return-to-work D&amp;I program for returning parents, piloted internally and rebranded as a commercial offering</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">LHH</span>
+          <span class="entry-date">Sep 2019 – Mar 2020 &nbsp;|&nbsp; London, U.K.</span>
+        </div>
+        <div class="entry-title">Sales Operations Analyst</div>
+        <p class="entry-desc">Managed end-to-end contract compliance and audit readiness across a national sales organization. Identified systemic governance gaps that led to a full commercial process overhaul and direct promotion to Operations Manager.</p>
+        <ul>
+          <li>Identified and escalated critical governance failures in the sales contracting process — missing contracts, unfavorable terms, and lack of financial oversight — triggering the organization's first structured commercial governance initiative</li>
+          <li>Digitized the contract signing process, replacing manual workflows and introducing a digital contract template to standardize terms and accelerate execution ahead of a planned DocuSign implementation</li>
+          <li>Instituted a weekly cross-functional contract review meeting between Sales and Finance leadership, creating the first regular touchpoint for commercial oversight</li>
+          <li>Managed Salesforce data integrity for contract records, ensuring audit-readiness and accurate reporting across the UK and Ireland</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">Lightbulb Digital</span>
+          <span class="entry-date">Aug 2018 – Mar 2020 &nbsp;|&nbsp; London, U.K.</span>
+        </div>
+        <div class="entry-title">Business Consultant &amp; Founder</div>
+        <p class="entry-desc">Founded and operated a boutique digital consultancy delivering branding, marketing strategy, website design, and brand identity for small business clients.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">Northwell Health</span>
+          <span class="entry-date">Jun 2013 – Apr 2017 &nbsp;|&nbsp; New York, U.S.</span>
+        </div>
+        <div class="entry-title">Accounts Receivable Analyst</div>
+        <ul>
+          <li>Served as subject-matter expert in insurance carrier claims processing and denial logic on a specialized escalation team within a compliance-driven healthcare environment</li>
+          <li>Conducted trend analysis and developed payer-specific workflows to improve claims resolution rates across the revenue cycle</li>
+          <li>Contributed to the rollout of the Allscripts EMR system across multiple practices, supporting data migration and user adoption</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">Cloud Engineer Academy</span>
+          <span class="entry-date">May 2026</span>
+        </div>
+        <div class="edu-program">Cloud Engineering &amp; Architecture</div>
+        <p class="edu-desc">Intensive AWS program covering cloud architecture, system design, networking, compute, storage, databases, security, and AI/ML services. Includes infrastructure as code with Terraform and AWS CDK, CI/CD pipelines, DevOps practices, automation with TypeScript, and Python programming.</p>
+      </div>
+
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">GoCloud Careers</span>
+          <span class="entry-date">Jan 2024 – Ongoing</span>
+        </div>
+        <div class="edu-program">Generative AI Architecture &amp; Cloud Architecture</div>
+        <p class="edu-desc">300+ hour professional training and mentorship program in generative AI architecture under David Linthicum. Covers a 60-hour generative AI deployment course, live weekly case studies, and architectural review across operations, technology, and workforce dimensions.</p>
+      </div>
+
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">Northeastern University London</span>
+          <span class="entry-date">Apr 2023</span>
+        </div>
+        <div class="edu-program">Service Management &amp; Design with ServiceNow</div>
+        <p class="edu-desc">Bootcamp in collaboration with ServiceNow's Rise Up program focused on designing IT solutions and managing technical implementation processes.</p>
+      </div>
+
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">Sanford Brown Institute</span>
+          <span class="entry-date">May 2013</span>
+        </div>
+        <div class="edu-program">Medical Billing &amp; Coding</div>
+        <p class="edu-desc">Graduated top 3 in class. Awarded a full-time internship with Northwell Health and accepted a permanent position upon completion.</p>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2>Selected Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">Commercial Governance Architecture — LHH UK &amp; Ireland</span>
+          <span class="entry-date">Sep 2019 – Mar 2021</span>
+        </div>
+        <div class="entry-title">Architect &amp; Program Lead</div>
+        <p class="entry-desc">Identified systemic governance failures across a 50+ member national sales organization and designed a tiered commercial governance framework spanning Sales, Finance, and Operations. Introduced digital contract workflows, automated Salesforce alerts, a self-service assessment tool, and a cross-functional governance committee — transforming an ungoverned process into a structured, auditable system.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">ServiceNow Implementation — Supply Chain Operations Transformation</span>
+          <span class="entry-date">May 2023 – Jul 2024</span>
+        </div>
+        <div class="entry-title">Business &amp; Process Consultant</div>
+        <p class="entry-desc">Led analysis for an extended digital transformation consolidating fragmented order management from ERP and legacy systems into ServiceNow. Integrated Salesforce CRM with ERP, document storage, productivity suite, and email. Delivered process mapping, user stories, live demos, and UAT support.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">NextGen UK Enablement Program — ServiceNow RiseUp Partnership</span>
+          <span class="entry-date">Jun 2024 – Oct 2024</span>
+        </div>
+        <div class="entry-title">Program Partnership Manager</div>
+        <p class="entry-desc">Managed tri-party partnership redesigning the NextGen UK enablement program curriculum around project-based learning and employable skills, achieving stronger engagement and outcomes than prior cohorts.</p>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
