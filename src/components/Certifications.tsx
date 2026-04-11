@@ -9,8 +9,8 @@ const awsCerts = [
 ];
 
 const completedCerts = [
-  { name: "Lean Six Sigma Green Belt", status: "Complete" },
-  { name: "Process Improvement Specialist", status: "Complete" },
+  { name: "Lean Six Sigma Green Belt — SSGI", status: "Complete" },
+  { name: "Process Improvement Specialist — SSGI", status: "Complete" },
   { name: "SQL — Introduction & Advanced*", status: "Complete" },
 ];
 
