@@ -12,9 +12,9 @@ const links: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Artifacts", href: "#artifacts" },
-  { label: "Prompts", href: "/prompts", isRoute: true },
   { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
+  { label: "Prompts", href: "/prompts", isRoute: true },
 ];
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || !isHome
           ? "bg-background/90 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
