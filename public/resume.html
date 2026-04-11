@@ -66,15 +66,48 @@
   .edu-entry .edu-program { font-style: italic; font-size: 11.5px; color: #be6c35; font-weight: 400; margin-bottom: 3px; }
   .edu-entry .edu-desc { font-size: 11px; color: #2A2A2A; line-height: 1.5; margin-top: 3px; font-weight: 400; }
 
+  .download-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    border: 1px solid #be6c35;
+    background: transparent;
+    color: #be6c35;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .download-btn:hover {
+    background: #be6c35;
+    color: #fff;
+  }
+  .download-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
   @media print {
     body { font-size: 11px; }
     header { padding: 18px 26px; }
     .main { padding: 18px 22px; }
     .sidebar { padding: 18px 14px; }
+    .download-btn { display: none; }
   }
 </style>
 </head>
 <body>
+<button class="download-btn" onclick="window.print()">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  Download PDF
+</button>
 
 <header>
   <h1>Mercedes D. Edwards</h1>
