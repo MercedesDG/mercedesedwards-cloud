@@ -18,7 +18,8 @@ const ExecutiveSummary = () => (
           Architecture philosophy, core competencies, and approach
         </p>
         <p className="font-sans text-base text-muted-foreground">
-          Mercedes D. Edwards — Solutions Architect, AI &amp; Cloud Enablement
+          Mercedes D. Edwards — Solutions Architect — AI &amp; Cloud Enablement<br />
+          London, U.K. | Targeting New York and Miami | me@mercedesedwards.cloud | mercedesedwards.cloud
         </p>
       </div>
     </section>
