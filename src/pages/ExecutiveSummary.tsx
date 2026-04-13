@@ -49,10 +49,10 @@ const ExecutiveSummary = () => (
           Architecture Philosophy
         </h2>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
-          I design AI and cloud solutions for environments where the real challenge isn't the technology — it's the complexity surrounding it. Regulated industries, legacy systems that can't be replaced overnight, distributed teams that need to adopt new tools without disrupting the work already in motion. My approach starts with understanding the business constraints and governance boundaries before selecting a single service or writing a line of code.
+          I design AI and cloud solutions for environments where the real challenge isn't the technology — it's the complexity surrounding it. Regulated industries, legacy systems that can't be replaced overnight, distributed teams that need to adopt new tools without disrupting the work that is already in motion. My approach begins with understanding business constraints and governance boundaries before selecting a single service or architecting a solution.
         </p>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-12">
-          Architecture decisions should be explainable to every stakeholder in the room — the compliance officer, the engineering lead, and the end user who needs it to work on Monday morning. I prioritize defensible trade-offs over theoretical perfection, and I design for what happens after launch day: how systems are maintained, how teams are enabled to operate them independently, and how governance scales alongside the technology.
+          Architecture decisions should be explainable to every stakeholder in the room — the executives, the legal/ compliance officer, the engineering lead, and the end user who needs it to work on Monday morning. I prioritize defensible trade-offs over theoretical perfection, and I design for what happens after launch day: how systems are maintained, how teams are enabled to operate them independently, and how governance scales alongside the technology.
         </p>
 
         <div className="section-divider mb-12" />
@@ -64,7 +64,7 @@ const ExecutiveSummary = () => (
         <div className="space-y-8 mb-12">
           <div>
             <h3 className="font-serif text-xl font-bold text-foreground mb-2">
-              Governance &amp; Compliance Architecture
+              Governance Governance &amp; Compliance Architecture
             </h3>
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
               Designing systems where security, consent management, and audit readiness are embedded from the first architectural decision — not layered on after deployment. Experienced in building commercial governance frameworks, tiered approval workflows, and cross-functional compliance structures across distributed organizations.
@@ -75,7 +75,7 @@ const ExecutiveSummary = () => (
               AI-Powered Enablement &amp; Knowledge Management
             </h3>
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
-              Architecting intelligent systems that help organizations learn, adopt, and scale. From curriculum redesign and project-based learning programs to prompt engineering training for non-technical teams — bridging the gap between AI capability and practical organizational adoption.
+              Architecting intelligent systems that help organizations learn, adopt, and scale. From curriculum redesign and project-based learning programs to prompt engineering training for non-technical users — bridging the gap between AI capability and practical organizational adoption.
             </p>
           </div>
           <div>
@@ -173,7 +173,7 @@ const ExecutiveSummary = () => (
                   Demand forecasting, omnichannel order orchestration, cross-border compliance
                 </td>
                 <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  SageMaker, EventBridge, Lambda, Step Functions
+                  COMING SOON
                 </td>
               </tr>
               <tr>
@@ -187,7 +187,7 @@ const ExecutiveSummary = () => (
                   AI observability, cost optimization, agentic troubleshooting with Kiro CLI
                 </td>
                 <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  CloudWatch, X-Ray, Managed Grafana, Kiro CLI
+                  COMING SOON
                 </td>
               </tr>
             </tbody>
