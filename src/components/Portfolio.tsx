@@ -53,53 +53,65 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
     return () => observer.disconnect();
   }, []);
 
+  const isComingSoon = project.status === "Coming Soon";
+
   return (
     <div
       ref={ref}
-      className={`bg-background rounded-lg p-8 md:p-10 border border-border transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+      className={`relative bg-background rounded-lg p-8 md:p-10 border border-border transition-all duration-700 overflow-hidden ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-      <span className="inline-block px-3 py-1 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase mb-6">
-        {project.industry}
-      </span>
-      <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-2">
-        {project.name}
-      </h3>
-      <p className="font-sans text-base text-accent font-medium mb-4">
-        {project.subtitle}
-      </p>
-      <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-6">
-        {project.description}
-      </p>
-      <div className="flex flex-wrap gap-2 mb-6">
-        {project.services.map((s) => (
-          <span
-            key={s}
-            className="px-3 py-1 bg-secondary rounded-full font-sans text-xs text-muted-foreground"
-          >
-            {s}
-          </span>
-        ))}
-      </div>
-      <div className="flex items-center justify-between">
-        <span
-          className={`inline-block px-3 py-1 rounded-full font-sans text-xs editorial-spacing uppercase ${
-            project.status === "Architecture In Progress"
-              ? "bg-accent/20 text-muted-foreground"
-              : "bg-muted text-muted-foreground"
-          }`}
-        >
-          {project.status}
+      <div className={isComingSoon ? "blur-[6px] opacity-50 pointer-events-none select-none" : ""}>
+        <span className="inline-block px-3 py-1 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase mb-6">
+          {project.industry}
         </span>
-        <div className="flex gap-6">
-          <span className="font-sans text-sm text-muted-foreground flex items-center gap-1 cursor-default opacity-50">
-            Architecture Document <ArrowRight className="w-3 h-3" />
+        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-2">
+          {project.name}
+        </h3>
+        <p className="font-sans text-base text-accent font-medium mb-4">
+          {project.subtitle}
+        </p>
+        <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-6">
+          {project.description}
+        </p>
+        <div className="flex flex-wrap gap-2 mb-6">
+          {project.services.map((s) => (
+            <span
+              key={s}
+              className="px-3 py-1 bg-secondary rounded-full font-sans text-xs text-muted-foreground"
+            >
+              {s}
+            </span>
+          ))}
+        </div>
+        <div className="flex items-center justify-between">
+          <span
+            className={`inline-block px-3 py-1 rounded-full font-sans text-xs editorial-spacing uppercase ${
+              project.status === "Architecture In Progress"
+                ? "bg-accent/20 text-muted-foreground"
+                : "bg-muted text-muted-foreground"
+            }`}
+          >
+            {project.status}
           </span>
-          <span className="font-sans text-sm text-muted-foreground flex items-center gap-1 cursor-default opacity-50">
-            Medium Write-Up <ArrowRight className="w-3 h-3" />
-          </span>
+          <div className="flex gap-6">
+            <span className="font-sans text-sm text-muted-foreground flex items-center gap-1 cursor-default opacity-50">
+              Architecture Document <ArrowRight className="w-3 h-3" />
+            </span>
+            <span className="font-sans text-sm text-muted-foreground flex items-center gap-1 cursor-default opacity-50">
+              Medium Write-Up <ArrowRight className="w-3 h-3" />
+            </span>
+          </div>
         </div>
       </div>
+
+      {isComingSoon && (
+        <div className="absolute inset-0 flex items-center justify-center bg-background/30 backdrop-blur-[2px] rounded-lg">
+          <span className="px-6 py-3 bg-background/80 backdrop-blur-md border border-border rounded-full font-sans text-sm editorial-spacing uppercase text-foreground shadow-lg">
+            Coming Soon
+          </span>
+        </div>
+      )}
     </div>
   );
 };

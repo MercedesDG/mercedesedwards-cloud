@@ -28,9 +28,8 @@ const artifacts: Artifact[] = [
   },
   {
     title: "Governance & Compliance",
-    description: "Audit frameworks, consent models, and security architecture",
-    status: "View Document",
-    link: "/artifacts/governance",
+    description: "Audit frameworks, consent models, and security architecture — Coming Soon",
+    status: "Coming Soon",
   },
 ];
 
