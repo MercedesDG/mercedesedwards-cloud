@@ -66,48 +66,15 @@
   .edu-entry .edu-program { font-style: italic; font-size: 11.5px; color: #be6c35; font-weight: 400; margin-bottom: 3px; }
   .edu-entry .edu-desc { font-size: 11px; color: #2A2A2A; line-height: 1.5; margin-top: 3px; font-weight: 400; }
 
-  .download-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 9999;
-    border: 1px solid #be6c35;
-    background: transparent;
-    color: #be6c35;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: background 0.2s, color 0.2s;
-  }
-  .download-btn:hover {
-    background: #be6c35;
-    color: #fff;
-  }
-  .download-btn svg {
-    width: 14px;
-    height: 14px;
-  }
-
   @media print {
     body { font-size: 11px; }
     header { padding: 18px 26px; }
     .main { padding: 18px 22px; }
     .sidebar { padding: 18px 14px; }
-    .download-btn { display: none; }
   }
 </style>
 </head>
 <body>
-<button class="download-btn" onclick="window.print()">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-  Download PDF
-</button>
 
 <header>
   <h1>Mercedes D. Edwards</h1>
@@ -214,7 +181,7 @@
         <div class="entry-title">Consultant — Business Analysis &amp; Enablement</div>
         <p class="entry-desc">Business and process consultant delivering digital transformation and enablement projects across supply chain operations, HR service delivery, and IT service management within a ServiceNow implementation practice.</p>
         <ul>
-          <li>Led workshop facilitation and requirements engineering across enterprise implementations, producing process maps, user stories, and systems analysis documentation aligned to operational outcomes</li>
+          <li>Facilitated workshops and requirements engineering across enterprise implementations, producing process maps, user stories, and systems analysis documentation aligned to operational outcomes</li>
           <li>Managed a tri-party enablement partnership between ServiceNow, Northeastern University London, and The Process Play — redesigned the NextGen UK program curriculum around project-based learning and employability outcomes, achieving stronger engagement than prior cohorts</li>
           <li>Contributed to a supply chain transformation consolidating fragmented order management from ERP and legacy systems into ServiceNow, with Salesforce CRM integration across ERP, document storage, and productivity systems</li>
           <li>Facilitated discovery workshops for HR Service Delivery, ITSM, and Employee Center implementations, translating operational needs into structured process designs for development teams</li>
@@ -280,6 +247,16 @@
 
     <div class="section">
       <h2>Education</h2>
+
+
+    <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">Western Governors University</span>
+          <span class="entry-date">Expected 2027</span>
+        </div>
+        <div class="edu-program">Bachelor of Science, Information Technology </div>
+        <p class="edu-desc">Competency-based program covering cloud computing, cybersecurity, networking, data management, AI, IT governance, and Python automation. Includes preparation for AWS Cloud Practitioner, CompTIA A+, Network+, Security+, and Cloud+ certifications. Curriculum aligned to COBIT, ITIL, and ISO frameworks.</p>
+      </div>
 
       <div class="edu-entry">
         <div class="entry-header">
