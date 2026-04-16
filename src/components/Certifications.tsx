@@ -1,18 +1,59 @@
 import { useEffect, useRef, useState } from "react";
 
-const awsCerts = [
-  { name: "AWS AI Practitioner (AIF-C01)", status: "In Progress" },
-  { name: "AWS Solutions Architect Associate (SAA-C03)", status: "In Progress" },
-  { name: "AWS Data Engineer Associate", status: "Planned" },
-  { name: "AWS Generative AI Developer", status: "Planned" },
-  { name: "AWS Solutions Architect Professional", status: "Planned" },
+const cloudArchCerts = [
+  { name: "AI Practitioner (AIF-C01) — AWS", status: "In Progress" },
+  { name: "Solutions Architect Associate (SAA-C03) — AWS", status: "In Progress" },
+  { name: "Data Engineer Associate (DEA-C01) — AWS", status: "Planned" },
 ];
 
-const completedCerts = [
+const privacyGovCerts = [
+  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "In Progress" },
+  { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "In Progress" },
+  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "Planned" },
+];
+
+const processDataCerts = [
   { name: "Lean Six Sigma Green Belt — SSGI", status: "Complete" },
   { name: "Process Improvement Specialist — SSGI", status: "Complete" },
   { name: "SQL — Introduction & Advanced*", status: "Complete" },
 ];
+
+type Cert = { name: string; status: string };
+
+const CertSection = ({
+  title,
+  certs,
+  visible,
+  delayOffset,
+}: {
+  title: string;
+  certs: Cert[];
+  visible: boolean;
+  delayOffset: number;
+}) => (
+  <div className="mb-12">
+    <h3 className="font-serif text-xl sm:text-2xl font-bold text-foreground mb-6">{title}</h3>
+    <div className="space-y-0">
+      {certs.map((c, i) => (
+        <div
+          key={c.name}
+          className={`flex items-center justify-between py-5 border-b border-border transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
+          style={{ transitionDelay: `${(delayOffset + i) * 100}ms` }}
+        >
+          <span className="font-sans text-lg sm:text-xl text-foreground">{c.name}</span>
+          <span className={statusPill(c.status)}>{c.status}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const statusPill = (status: string) => {
+  const base = "font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-foreground";
+  if (status === "Complete") return `${base} bg-green-200`;
+  if (status === "In Progress") return `${base} bg-accent/20`;
+  return `${base} bg-muted`;
+};
 
 const Certifications = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -27,13 +68,6 @@ const Certifications = () => {
     return () => observer.disconnect();
   }, []);
 
-  const statusPill = (status: string) => {
-    const base = "font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-foreground";
-    if (status === "Complete") return `${base} bg-green-200`;
-    if (status === "In Progress") return `${base} bg-accent/20`;
-    return `${base} bg-muted`;
-  };
-
   return (
     <section id="certifications" className="py-24 md:py-32 bg-background">
       <div
@@ -47,42 +81,10 @@ const Certifications = () => {
           Certifications
         </h2>
 
-        {/* AWS Subheader */}
-        <h3 className="font-serif text-xl sm:text-2xl font-bold text-foreground mb-6">AWS</h3>
-        <div className="space-y-0 mb-12">
-          {awsCerts.map((c, i) => (
-            <div
-              key={c.name}
-              className={`flex items-center justify-between py-5 border-b border-border transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
-              style={{ transitionDelay: `${i * 100}ms` }}
-            >
-              <span className="font-sans text-lg sm:text-xl text-foreground">
-                {c.name}
-              </span>
-              <span className={statusPill(c.status)}>
-                {c.status}
-              </span>
-            </div>
-          ))}
-        </div>
+        <CertSection title="Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={0} />
+        <CertSection title="Privacy & AI Governance" certs={privacyGovCerts} visible={visible} delayOffset={cloudArchCerts.length} />
+        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={cloudArchCerts.length + privacyGovCerts.length} />
 
-        {/* Completed Certs */}
-        <div className="space-y-0">
-          {completedCerts.map((c, i) => (
-            <div
-              key={c.name}
-              className={`flex items-center justify-between py-5 border-b border-border transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
-              style={{ transitionDelay: `${(awsCerts.length + i) * 100}ms` }}
-            >
-              <span className="font-sans text-lg sm:text-xl text-foreground">
-                {c.name}
-              </span>
-              <span className={statusPill(c.status)}>
-                {c.status}
-              </span>
-            </div>
-          ))}
-        </div>
         <p className="font-sans text-xs text-muted-foreground mt-4 italic">
           *Professional Training
         </p>
