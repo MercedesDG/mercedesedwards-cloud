@@ -6,9 +6,9 @@ const cloudArchCerts = [
 ];
 
 const privacyGovCerts = [
-  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "In Progress" },
-  { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "In Progress" },
-  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "Planned" },
+  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
+  { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "Complete" },
+  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "In Progress" },
 ];
 
 const processDataCerts = [
@@ -81,7 +81,7 @@ const Certifications = () => {
         </h2>
 
         <CertSection title="Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={0} />
-        <CertSection title="Privacy & AI Governance" certs={privacyGovCerts} visible={visible} delayOffset={cloudArchCerts.length} />
+        <CertSection title="AI Governance, Risk & Privacy" certs={privacyGovCerts} visible={visible} delayOffset={cloudArchCerts.length} />
         <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={cloudArchCerts.length + privacyGovCerts.length} />
 
         <p className="font-sans text-xs text-muted-foreground mt-4 italic">
