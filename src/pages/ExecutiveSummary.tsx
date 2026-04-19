@@ -18,7 +18,7 @@ const ExecutiveSummary = () => (
           Architecture philosophy, core competencies, and approach
         </p>
         <p className="font-sans text-base text-muted-foreground">
-          Mercedes D. Edwards — Solutions Architect — AI &amp; Cloud Enablement<br />
+          Mercedes D. Edwards — Solutions Architect — AI Governance &amp; Cloud Architecture<br />
           London, U.K. | Targeting New York and Miami | me@mercedesedwards.cloud | mercedesedwards.cloud
         </p>
       </div>
@@ -50,10 +50,13 @@ const ExecutiveSummary = () => (
           Architecture Philosophy
         </h2>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
-          I design AI and cloud solutions for environments where the real challenge isn't the technology — it's the complexity surrounding it. Regulated industries, legacy systems that can't be replaced overnight, distributed teams that need to adopt new tools without disrupting the work that is already in motion. My approach begins with understanding business constraints and governance boundaries before selecting a single service or architecting a solution.
+          I design AI and cloud solutions for environments where the real challenge isn't the technology — it's the complexity surrounding it. Regulated industries, legacy systems that can't be replaced overnight, distributed teams that need to adopt new tools without disrupting the work already in motion. My approach starts with understanding the business constraints and governance boundaries before selecting a single service or writing a line of code.
+        </p>
+        <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
+          Architecture decisions should be explainable to every stakeholder in the room — the compliance officer, the engineering lead, and the end user who needs it to work on Monday morning. I prioritize defensible trade-offs over theoretical perfection, and I design for what happens after launch day: how systems are maintained, how teams are enabled to operate them independently, and how governance scales alongside the technology.
         </p>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-12">
-          Architecture decisions should be explainable to every stakeholder in the room — the executives, the legal/ compliance officer, the engineering lead, and the end user who needs it to work on Monday morning. I prioritize defensible trade-offs over theoretical perfection, and I design for what happens after launch day: how systems are maintained, how teams are enabled to operate them independently, and how governance scales alongside the technology.
+          I believe governance is not a constraint on innovation, but the structure that lets innovation scale responsibly.
         </p>
 
         <div className="section-divider mb-12" />
@@ -65,18 +68,18 @@ const ExecutiveSummary = () => (
         <div className="space-y-8 mb-12">
           <div>
             <h3 className="font-serif text-xl font-bold text-foreground mb-2">
-              Governance Governance &amp; Compliance Architecture
+              AI Governance &amp; Privacy Architecture
             </h3>
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
-              Designing systems where security, consent management, and audit readiness are embedded from the first architectural decision — not layered on after deployment. Experienced in building commercial governance frameworks, tiered approval workflows, and cross-functional compliance structures across distributed organizations.
+              Designing systems where consent management, privacy controls, data residency, and auditability are embedded from the first architectural decision — not layered on after deployment. Treating AI agents as governed entities with scoped identities, delegated authority, and revocable permissions. Building architectures that align to evolving regulatory frameworks including HIPAA, 21st Century Cures, 42 CFR Part 2, and emerging AI governance standards.
             </p>
           </div>
           <div>
             <h3 className="font-serif text-xl font-bold text-foreground mb-2">
-              AI-Powered Enablement &amp; Knowledge Management
+              Regulated Industry Solution Architecture
             </h3>
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
-              Architecting intelligent systems that help organizations learn, adopt, and scale. From curriculum redesign and project-based learning programs to prompt engineering training for non-technical users — bridging the gap between AI capability and practical organizational adoption.
+              Designing for environments where compliance is structural, not superficial. Experienced with healthcare (HIPAA, FHIR, EHR modernization), cross-border data residency, and commercial governance frameworks across distributed organizations. Skilled at translating regulatory requirements into architectural constraints that systems enforce automatically.
             </p>
           </div>
           <div>
@@ -84,7 +87,7 @@ const ExecutiveSummary = () => (
               Legacy Integration &amp; Modernization
             </h3>
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
-              Designing integration architectures for systems that lack modern APIs, documented structures, or interoperability standards. Building event-driven pipelines that bridge legacy platforms to cloud-native services without requiring replacement of the systems organizations still depend on.
+              Designing integration architectures for systems that lack modern APIs, documented structures, or interoperability standards. Building event-driven pipelines that bridge legacy platforms to cloud-native services without requiring replacement of the systems organizations still depend on — with governance metadata applied at the transformation layer.
             </p>
           </div>
           <div>
@@ -92,7 +95,7 @@ const ExecutiveSummary = () => (
               Full-Lifecycle AI Operations
             </h3>
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
-              Covering the arc from initial design through production reliability — including observability, cost optimization, agentic troubleshooting, and operational handoff. Ensuring the teams who inherit a system can maintain, monitor, and evolve it without ongoing external dependency.
+              Covering the arc from initial design through production reliability — including observability, cost optimization, agentic troubleshooting, and operational handoff. Ensuring correlated audit trails, anomaly detection, and the capacity for teams who inherit a system to maintain, monitor, and evolve it without ongoing external dependency.
             </p>
           </div>
         </div>
@@ -115,6 +118,11 @@ const ExecutiveSummary = () => (
           <div className="border-l-2 border-accent pl-4">
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
               <strong className="text-foreground">Design for defensible decisions.</strong> Every service selection, integration pattern, and security model comes with documented alternatives considered, trade-offs evaluated, and rationale tied to business outcomes. No decision exists without a reason that can be articulated under scrutiny.
+            </p>
+          </div>
+          <div className="border-l-2 border-accent pl-4">
+            <p className="font-sans text-base leading-relaxed text-muted-foreground">
+              <strong className="text-foreground">Embed governance into the data flow.</strong> Consent boundaries, access controls, data lineage, and audit trails are part of the system's structure — enforced automatically rather than dependent on policy documents and human adherence.
             </p>
           </div>
           <div className="border-l-2 border-accent pl-4">
@@ -157,10 +165,10 @@ const ExecutiveSummary = () => (
                   Healthcare
                 </td>
                 <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Legacy EHR integration, RAG clinical chatbot, agentic security under HIPAA
+                  Legacy EHR integration, RAG clinical chatbot, agentic AI security, consent-aware data pipeline under HIPAA and 42 CFR Part 2
                 </td>
                 <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Bedrock, Kinesis, Lambda, Cognito, Verified Permissions
+                  Bedrock, Kinesis, Lambda, Cognito, Verified Permissions, DMS
                 </td>
               </tr>
               <tr>
@@ -197,20 +205,34 @@ const ExecutiveSummary = () => (
 
         <div className="section-divider mb-12" />
 
-        {/* Certifications */}
+        {/* Credentials & Development Path */}
         <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
-          Certifications
+          Credentials &amp; Development Path
         </h2>
-        <ul className="space-y-2 mb-8">
-          <li className="font-sans text-base text-muted-foreground">
-            AWS AI Practitioner (AIF-C01) — Expected April 2026
-          </li>
-          <li className="font-sans text-base text-muted-foreground">
-            AWS Solutions Architect Associate (SAA-C03) — Expected May 2026
-          </li>
-          <li className="font-sans text-base text-muted-foreground">
-            AWS Data Engineer Associate, Gen AI Developer Professional, Solutions Architect Professional — Planned
-          </li>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Cloud Architecture</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">AI Practitioner (AIF-C01) — AWS — In Progress</li>
+          <li className="font-sans text-base text-muted-foreground">Solutions Architect Associate (SAA-C03) — AWS — In Progress</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">AI Governance, Risk &amp; Privacy</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">Ethical Principles of Conversational AI — Linux Foundation — Complete</li>
+          <li className="font-sans text-base text-muted-foreground">Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation — Complete</li>
+          <li className="font-sans text-base text-muted-foreground">Artificial Intelligence Governance Professional (AIGP) — IAPP — In Progress</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Process &amp; Data</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">Lean Six Sigma Green Belt — SSGI</li>
+          <li className="font-sans text-base text-muted-foreground">Process Improvement Specialist — SSGI</li>
+          <li className="font-sans text-base text-muted-foreground">SQL — Introduction &amp; Advanced</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Academic</h3>
+        <ul className="space-y-2 mb-8 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">BS, Information Technology — Western Governors University — Expected 2027</li>
         </ul>
 
         <div className="section-divider mb-8" />
