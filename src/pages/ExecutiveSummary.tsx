@@ -122,6 +122,11 @@ const ExecutiveSummary = () => (
           </div>
           <div className="border-l-2 border-accent pl-4">
             <p className="font-sans text-base leading-relaxed text-muted-foreground">
+              <strong className="text-foreground">Embed governance into the data flow.</strong> Consent boundaries, access controls, data lineage, and audit trails are part of the system's structure — enforced automatically rather than dependent on policy documents and human adherence.
+            </p>
+          </div>
+          <div className="border-l-2 border-accent pl-4">
+            <p className="font-sans text-base leading-relaxed text-muted-foreground">
               <strong className="text-foreground">Build for the handoff.</strong> The architecture is only as good as the team that operates it after the engagement ends. Operational playbooks, governance documentation, and enablement artifacts are deliverables — not afterthoughts.
             </p>
           </div>
@@ -160,10 +165,10 @@ const ExecutiveSummary = () => (
                   Healthcare
                 </td>
                 <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Legacy EHR integration, RAG clinical chatbot, agentic security under HIPAA
+                  Legacy EHR integration, RAG clinical chatbot, agentic AI security, consent-aware data pipeline under HIPAA and 42 CFR Part 2
                 </td>
                 <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Bedrock, Kinesis, Lambda, Cognito, Verified Permissions
+                  Bedrock, Kinesis, Lambda, Cognito, Verified Permissions, DMS
                 </td>
               </tr>
               <tr>
@@ -200,20 +205,34 @@ const ExecutiveSummary = () => (
 
         <div className="section-divider mb-12" />
 
-        {/* Certifications */}
+        {/* Credentials & Development Path */}
         <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
-          Certifications
+          Credentials &amp; Development Path
         </h2>
-        <ul className="space-y-2 mb-8">
-          <li className="font-sans text-base text-muted-foreground">
-            AWS AI Practitioner (AIF-C01) — Expected April 2026
-          </li>
-          <li className="font-sans text-base text-muted-foreground">
-            AWS Solutions Architect Associate (SAA-C03) — Expected May 2026
-          </li>
-          <li className="font-sans text-base text-muted-foreground">
-            AWS Data Engineer Associate, Gen AI Developer Professional, Solutions Architect Professional — Planned
-          </li>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Cloud Architecture</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">AI Practitioner (AIF-C01) — AWS — In Progress</li>
+          <li className="font-sans text-base text-muted-foreground">Solutions Architect Associate (SAA-C03) — AWS — In Progress</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">AI Governance, Risk &amp; Privacy</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">Ethical Principles of Conversational AI — Linux Foundation — Complete</li>
+          <li className="font-sans text-base text-muted-foreground">Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation — Complete</li>
+          <li className="font-sans text-base text-muted-foreground">Artificial Intelligence Governance Professional (AIGP) — IAPP — In Progress</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Process &amp; Data</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">Lean Six Sigma Green Belt — SSGI</li>
+          <li className="font-sans text-base text-muted-foreground">Process Improvement Specialist — SSGI</li>
+          <li className="font-sans text-base text-muted-foreground">SQL — Introduction &amp; Advanced</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Academic</h3>
+        <ul className="space-y-2 mb-8 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">BS, Information Technology — Western Governors University — Expected 2027</li>
         </ul>
 
         <div className="section-divider mb-8" />
