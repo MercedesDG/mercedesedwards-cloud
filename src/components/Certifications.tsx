@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 const cloudArchCerts = [
   { name: "AI Practitioner (AIF-C01) — AWS", status: "In Progress" },
   { name: "Solutions Architect Associate (SAA-C03) — AWS", status: "In Progress" },
-  { name: "Data Engineer Associate (DEA-C01) — AWS", status: "Planned" },
 ];
 
 const privacyGovCerts = [
