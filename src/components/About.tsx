@@ -4,7 +4,7 @@ const specialties = [
   "Legacy Integration",
   "Agentic AI Security",
   "AI Operations & Observability",
-  "Governance & Knowledge Management",
+  "AI Governance",
 ];
 
 const About = () => {
