@@ -225,9 +225,9 @@ const ExecutiveSummary = () => (
 
         <h3 className="font-serif text-lg font-bold text-foreground mb-3">Process &amp; Data</h3>
         <ul className="space-y-2 mb-6 list-disc pl-6">
-          <li className="font-sans text-base text-muted-foreground">Lean Six Sigma Green Belt — SSGI</li>
-          <li className="font-sans text-base text-muted-foreground">Process Improvement Specialist — SSGI</li>
-          <li className="font-sans text-base text-muted-foreground">SQL — Introduction &amp; Advanced</li>
+          <li className="font-sans text-base text-muted-foreground">Lean Six Sigma Green Belt — SSGI — Complete</li>
+          <li className="font-sans text-base text-muted-foreground">Process Improvement Specialist — SSGI — Complete</li>
+          <li className="font-sans text-base text-muted-foreground">SQL — Introduction &amp; Advanced — Complete</li>
         </ul>
 
         <h3 className="font-serif text-lg font-bold text-foreground mb-3">Academic</h3>

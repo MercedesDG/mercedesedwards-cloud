@@ -10,19 +10,16 @@ const Governance = () => (
     {/* Header */}
     <section className="pt-24 pb-12 bg-secondary">
       <div className="container max-w-4xl mx-auto px-6">
-        <p className="font-sans text-sm editorial-spacing uppercase text-accent mb-4">Artifact</p>
-        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3">
-          MedBridge AI — Governance Architecture Considerations
+        <p className="font-sans text-sm editorial-spacing uppercase text-accent mb-4">Artifacts</p>
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-3">
+          Governance &amp; Compliance
         </h1>
         <p className="font-sans text-xl text-muted-foreground mb-3">
-          Audit frameworks, consent models, and security architecture
+          Audit frameworks, consent models, and security architecture — the governance thinking behind each project.
         </p>
-        <p className="font-sans text-base text-muted-foreground mb-4">
-          Mercedes D. Edwards — Solutions Architect, AI &amp; Cloud Enablement
+        <p className="font-sans text-base text-muted-foreground">
+          Mercedes D. Edwards — Solutions Architect, AI Enablement
         </p>
-        <span className="inline-block px-3 py-1 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase">
-          MedBridge AI — Healthcare
-        </span>
       </div>
     </section>
 
@@ -35,18 +32,22 @@ const Governance = () => (
         >
           <ArrowLeft className="w-4 h-4" /> Back to Portfolio
         </Link>
-        <button
-          onClick={() => window.print()}
-          className="flex items-center gap-1.5 px-4 py-2 rounded border border-accent text-accent font-sans text-xs editorial-spacing uppercase hover:bg-accent/10 transition-colors"
-        >
-          <Download className="w-3.5 h-3.5" /> Download PDF
-        </button>
       </div>
     </div>
 
     {/* Document Body */}
-    <div className="container max-w-4xl mx-auto px-6 py-12">
-      <div className="bg-white rounded-lg border border-border p-8 md:p-12 shadow-sm">
+    <div className="container max-w-4xl mx-auto px-6 py-12 space-y-16">
+      {/* SECTION 1: MedBridge AI (Live) */}
+      <article className="bg-white rounded-lg border border-border p-8 md:p-12 shadow-sm">
+        <span className="inline-block px-3 py-1 mb-4 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase">
+          MedBridge AI — Healthcare
+        </span>
+        <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-3">
+          MedBridge AI — Governance Architecture Considerations
+        </h2>
+        <p className="font-sans text-lg text-muted-foreground mb-8">
+          How HIPAA, consent management, and agentic AI security shaped every architectural decision.
+        </p>
         {/* Project Context */}
         <section className="mb-10">
           <h2 className="font-serif text-2xl font-bold text-foreground mb-4">Project Context</h2>
@@ -217,7 +218,60 @@ const Governance = () => (
             Full architecture decision documents and working prototypes will be published at mercedesedwards.cloud as the project progresses.
           </p>
         </section>
-      </div>
+
+        <div className="mt-10 pt-6 border-t border-border flex justify-end">
+          <button
+            onClick={() => window.print()}
+            className="flex items-center gap-1.5 px-4 py-2 rounded border border-accent text-accent font-sans text-xs editorial-spacing uppercase hover:bg-accent/10 transition-colors"
+          >
+            <Download className="w-3.5 h-3.5" /> Download PDF
+          </button>
+        </div>
+      </article>
+
+      {/* SECTION 2: ThreadLine (Coming Soon) */}
+      <article className="bg-white rounded-lg border border-border p-8 md:p-12 shadow-sm opacity-70">
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase">
+            ThreadLine — Retail &amp; Supply Chain
+          </span>
+          <span className="inline-block font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full bg-muted text-muted-foreground">
+            Coming Soon
+          </span>
+        </div>
+        <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-3">
+          ThreadLine — Governance &amp; Compliance Considerations
+        </h2>
+        <p className="font-sans text-base italic text-muted-foreground leading-relaxed">
+          Cross-border compliance, data residency, and regulatory alignment for omnichannel supply chain operations across the US and Latin America.
+        </p>
+      </article>
+
+      {/* SECTION 3: MedBridge AI Phase 2 (Coming Soon) */}
+      <article className="bg-white rounded-lg border border-border p-8 md:p-12 shadow-sm opacity-70">
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full border border-accent text-muted-foreground font-sans text-xs editorial-spacing uppercase">
+            MedBridge AI Phase 2 — Healthcare Operations
+          </span>
+          <span className="inline-block font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full bg-muted text-muted-foreground">
+            Coming Soon
+          </span>
+        </div>
+        <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-3">
+          MedBridge AI Phase 2 — Operational Governance &amp; Audit Trail Architecture
+        </h2>
+        <p className="font-sans text-base italic text-muted-foreground leading-relaxed">
+          Correlated audit trails, anomaly detection, and governance of AI-powered observability and troubleshooting agents in production healthcare environments.
+        </p>
+      </article>
+
+      <p className="font-sans text-base italic text-muted-foreground text-center pt-6">
+        Governance artifacts are published as each project's architecture progresses. Full architecture decision documents and project write-ups are available at{" "}
+        <a href="https://mercedesedwards.cloud" className="text-accent hover:underline">
+          mercedesedwards.cloud
+        </a>
+        .
+      </p>
     </div>
 
     <Footer />

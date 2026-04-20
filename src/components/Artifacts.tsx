@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 interface Artifact {
   title: string;
   description: string;
-  status: "View Document" | "Coming Soon";
+  status: "View Document" | "View Collection" | "Coming Soon";
   link?: string;
 }
 
@@ -17,9 +17,10 @@ const artifacts: Artifact[] = [
     link: "/artifacts/executive-summary",
   },
   {
-    title: "Technology Roadmaps",
-    description: "Multi-year infrastructure evolution aligned with business milestones — Coming Soon",
-    status: "Coming Soon",
+    title: "Governance & Compliance",
+    description: "Audit frameworks, consent models, and security architecture across projects",
+    status: "View Collection",
+    link: "/artifacts/governance",
   },
   {
     title: "Reference Architectures",
@@ -27,8 +28,8 @@ const artifacts: Artifact[] = [
     status: "Coming Soon",
   },
   {
-    title: "Governance & Compliance",
-    description: "Audit frameworks, consent models, and security architecture — Coming Soon",
+    title: "Technology Roadmaps",
+    description: "Multi-year infrastructure evolution aligned with business milestones — Coming Soon",
     status: "Coming Soon",
   },
 ];
@@ -64,7 +65,7 @@ const Artifacts = () => {
               <>
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="font-serif text-2xl font-bold text-foreground">{a.title}</h3>
-                  {a.status === "View Document" && (
+                  {(a.status === "View Document" || a.status === "View Collection") && (
                     <ArrowRight className="w-5 h-5 text-accent" />
                   )}
                 </div>
@@ -73,7 +74,7 @@ const Artifacts = () => {
                 </p>
                 <span
                   className={`inline-block font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full ${
-                    a.status === "View Document"
+                    a.status === "View Document" || a.status === "View Collection"
                       ? "bg-accent/20 text-accent"
                       : "bg-muted text-muted-foreground"
                   }`}
