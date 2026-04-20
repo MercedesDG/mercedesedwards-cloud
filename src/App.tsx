@@ -7,6 +7,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import Prompts from "./pages/Prompts.tsx";
 import ExecutiveSummary from "./pages/ExecutiveSummary.tsx";
+import Governance from "./pages/Governance.tsx";
 
 import NotFound from "./pages/NotFound.tsx";
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/prompts" element={<Prompts />} />
           <Route path="/artifacts/executive-summary" element={<ExecutiveSummary />} />
+          <Route path="/artifacts/governance" element={<Governance />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
