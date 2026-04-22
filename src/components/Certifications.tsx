@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 const cloudArchCerts = [
   { name: "AI Practitioner (AIF-C01) — AWS", status: "In Progress" },
-  { name: "Solutions Architect Associate (SAA-C03) — AWS", status: "In Progress" },
+  { name: "Azure AI Fundamentals (AI-900) — Microsoft", status: "Planned" },
+  { name: "Generative AI Leader — Google", status: "Planned" },
 ];
 
 const privacyGovCerts = [
@@ -80,7 +81,7 @@ const Certifications = () => {
           Certifications
         </h2>
 
-        <CertSection title="Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={0} />
+        <CertSection title="AI Architecture" certs={cloudArchCerts} visible={visible} delayOffset={0} />
         <CertSection title="AI Governance, Risk & Privacy" certs={privacyGovCerts} visible={visible} delayOffset={cloudArchCerts.length} />
         <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={cloudArchCerts.length + privacyGovCerts.length} />
 
