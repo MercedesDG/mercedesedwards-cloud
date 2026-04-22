@@ -74,16 +74,18 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-6">
           {project.description}
         </p>
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.services.map((s) => (
-            <span
-              key={s}
-              className="px-3 py-1 bg-secondary rounded-full font-sans text-xs text-muted-foreground"
-            >
-              {s}
-            </span>
-          ))}
-        </div>
+        {project.services.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-6">
+            {project.services.map((s) => (
+              <span
+                key={s}
+                className="px-3 py-1 bg-secondary rounded-full font-sans text-xs text-muted-foreground"
+              >
+                {s}
+              </span>
+            ))}
+          </div>
+        )}
         <div className="flex items-center justify-between">
           <span
             className={`inline-block px-3 py-1 rounded-full font-sans text-xs editorial-spacing uppercase ${
