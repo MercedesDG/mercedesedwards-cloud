@@ -23,7 +23,7 @@ const Affiliations = () => {
   }, []);
 
   return (
-    <section id="affiliations" className="py-24 md:py-32" style={{ backgroundColor: "#D2D5D0" }}>
+    <section id="affiliations" className="py-24 md:py-32" style={{ backgroundColor: "#d3d8d5" }}>
       <div
         ref={ref}
         className={`container max-w-4xl mx-auto px-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
