@@ -17,7 +17,7 @@ const projects: Project[] = [
     subtitle: "Agentic Healthcare Modernization Platform",
     description:
       "Designed a unified patient data platform integrating a legacy MUMPS-based EHR with modern systems through CDC pipelines, a RAG-powered clinical chatbot, and fine-grained agentic security — all under HIPAA constraints.",
-    services: ["Amazon Bedrock", "Amazon ECS", "Amazon Cognito", "Verified Permissions", "Amazon DMS"],
+    services: [],
     status: "Architecture In Progress",
   },
   {
