@@ -72,10 +72,10 @@ const Artifacts = () => {
                   {a.description}
                 </p>
                 <span
-                  className={`inline-block font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full ${
+                  className={`inline-block font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-foreground ${
                     a.status === "View Document" || a.status === "View Collection"
-                      ? "bg-accent/20 text-accent"
-                      : "bg-muted text-muted-foreground"
+                      ? "bg-accent/20"
+                      : "bg-muted"
                   }`}
                 >
                   {a.status}
