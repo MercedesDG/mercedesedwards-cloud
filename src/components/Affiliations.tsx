@@ -1,7 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import iappLogo from "@/assets/iapp-logo.jpg";
 
 const affiliations = [
-  { name: "IAPP — International Association of Privacy Professionals", status: "Member" },
+  {
+    name: "IAPP — International Association of Privacy Professionals",
+    status: "Member",
+    logo: iappLogo,
+  },
 ];
 
 const Affiliations = () => {
@@ -18,7 +23,7 @@ const Affiliations = () => {
   }, []);
 
   return (
-    <section id="affiliations" className="py-24 md:py-32 bg-background">
+    <section id="affiliations" className="py-24 md:py-32" style={{ backgroundColor: "#D2D5D0" }}>
       <div
         ref={ref}
         className={`container max-w-4xl mx-auto px-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -34,11 +39,22 @@ const Affiliations = () => {
           {affiliations.map((a, i) => (
             <div
               key={a.name}
-              className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-5 border-b border-border transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
+              className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 py-5 border-b border-foreground/20 transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
-              <span className="font-sans text-lg sm:text-xl text-foreground">{a.name}</span>
-              <span className="font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-foreground bg-accent/20 self-start sm:self-auto">
+              <div className="flex items-center gap-3">
+                <img
+                  src={a.logo}
+                  alt={`${a.name} logo`}
+                  className="w-8 h-8 rounded-sm object-cover flex-shrink-0"
+                  loading="lazy"
+                />
+                <span className="font-sans text-lg sm:text-xl text-foreground">{a.name}</span>
+              </div>
+              <span
+                className="font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-white self-start sm:self-auto"
+                style={{ backgroundColor: "#7AB648" }}
+              >
                 {a.status}
               </span>
             </div>
