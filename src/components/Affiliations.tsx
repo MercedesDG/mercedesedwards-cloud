@@ -23,7 +23,7 @@ const Affiliations = () => {
   }, []);
 
   return (
-    <section id="affiliations" className="py-24 md:py-32" style={{ backgroundColor: "#d3d8d5" }}>
+    <section id="affiliations" className="py-24 md:py-32" style={{ backgroundColor: "#dee0db" }}>
       <div
         ref={ref}
         className={`container max-w-4xl mx-auto px-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -51,10 +51,7 @@ const Affiliations = () => {
                 />
                 <span className="font-sans text-lg sm:text-xl text-foreground">{a.name}</span>
               </div>
-              <span
-                className="font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-white self-start sm:self-auto"
-                style={{ backgroundColor: "#7AB648" }}
-              >
+              <span className="font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-foreground bg-green-200 self-start sm:self-auto">
                 {a.status}
               </span>
             </div>
