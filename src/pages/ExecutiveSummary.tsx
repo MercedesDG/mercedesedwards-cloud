@@ -171,34 +171,6 @@ const ExecutiveSummary = () => (
                   Bedrock, Kinesis, Lambda, Cognito, Verified Permissions, DMS
                 </td>
               </tr>
-              <tr>
-                <td className="font-sans text-base font-medium text-foreground px-4 py-3 border border-border">
-                  ThreadLine
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Retail / Supply Chain
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Demand forecasting, omnichannel order orchestration, cross-border compliance
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  COMING SOON
-                </td>
-              </tr>
-              <tr>
-                <td className="font-sans text-base font-medium text-foreground px-4 py-3 border border-border">
-                  MedBridge AI Phase II
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Healthcare — Operations
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  AI observability, cost optimization, agentic troubleshooting with Kiro CLI
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  COMING SOON
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
