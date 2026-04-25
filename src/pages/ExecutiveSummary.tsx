@@ -18,8 +18,8 @@ const ExecutiveSummary = () => (
           Architecture philosophy, core competencies, and approach
         </p>
         <p className="font-sans text-base text-muted-foreground">
-          Mercedes D. Edwards — Solutions Architect — AI Governance &amp; Cloud Architecture<br />
-          London, U.K. | Targeting New York and Miami | me@mercedesedwards.cloud | mercedesedwards.cloud
+          Mercedes D. Edwards — AI Enablement | Governance, Risk &amp; Compliance<br />
+          London, U.K. | Targeting New York and Miami with right to work | me@mercedesedwards.cloud | mercedesedwards.cloud
         </p>
       </div>
     </section>
@@ -171,34 +171,6 @@ const ExecutiveSummary = () => (
                   Bedrock, Kinesis, Lambda, Cognito, Verified Permissions, DMS
                 </td>
               </tr>
-              <tr>
-                <td className="font-sans text-base font-medium text-foreground px-4 py-3 border border-border">
-                  ThreadLine
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Retail / Supply Chain
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Demand forecasting, omnichannel order orchestration, cross-border compliance
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  COMING SOON
-                </td>
-              </tr>
-              <tr>
-                <td className="font-sans text-base font-medium text-foreground px-4 py-3 border border-border">
-                  MedBridge AI Phase II
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  Healthcare — Operations
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  AI observability, cost optimization, agentic troubleshooting with Kiro CLI
-                </td>
-                <td className="font-sans text-base text-muted-foreground px-4 py-3 border border-border">
-                  COMING SOON
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -210,17 +182,20 @@ const ExecutiveSummary = () => (
           Credentials &amp; Development Path
         </h2>
 
-        <h3 className="font-serif text-lg font-bold text-foreground mb-3">Cloud Architecture</h3>
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">AI Governance, Risk &amp; Compliance</h3>
         <ul className="space-y-2 mb-6 list-disc pl-6">
-          <li className="font-sans text-base text-muted-foreground">AI Practitioner (AIF-C01) — AWS — In Progress</li>
-          <li className="font-sans text-base text-muted-foreground">Solutions Architect Associate (SAA-C03) — AWS — In Progress</li>
-        </ul>
-
-        <h3 className="font-serif text-lg font-bold text-foreground mb-3">AI Governance, Risk &amp; Privacy</h3>
-        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">ISO 27001 Lead Auditor — Exemplar Global — In Progress</li>
+          <li className="font-sans text-base text-muted-foreground">Artificial Intelligence Governance Professional (AIGP) — IAPP — Planned</li>
           <li className="font-sans text-base text-muted-foreground">Ethical Principles of Conversational AI — Linux Foundation — Complete</li>
           <li className="font-sans text-base text-muted-foreground">Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation — Complete</li>
-          <li className="font-sans text-base text-muted-foreground">Artificial Intelligence Governance Professional (AIGP) — IAPP — In Progress</li>
+        </ul>
+
+        <h3 className="font-serif text-lg font-bold text-foreground mb-3">AI &amp; Cloud Architecture</h3>
+        <ul className="space-y-2 mb-6 list-disc pl-6">
+          <li className="font-sans text-base text-muted-foreground">AI Practitioner (AIF-C01) — AWS — Planned</li>
+          <li className="font-sans text-base text-muted-foreground">Network+ — CompTIA — Planned</li>
+          <li className="font-sans text-base text-muted-foreground">Security+ — CompTIA — Planned</li>
+          <li className="font-sans text-base text-muted-foreground">Cloud+ — CompTIA — Planned</li>
         </ul>
 
         <h3 className="font-serif text-lg font-bold text-foreground mb-3">Process &amp; Data</h3>
