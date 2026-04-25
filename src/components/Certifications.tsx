@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 
 const cloudArchCerts = [
-  { name: "AI Practitioner (AIF-C01) — AWS", status: "In Progress" },
-  { name: "Azure AI Fundamentals (AI-900) — Microsoft", status: "Planned" },
-  { name: "Generative AI Leader — Google", status: "Planned" },
+  { name: "AI Practitioner (AIF-C01) — AWS", status: "Planned" },
+  { name: "Network+ — CompTIA", status: "Planned" },
+  { name: "Security+ — CompTIA", status: "Planned" },
+  { name: "Cloud+ — CompTIA", status: "Planned" },
 ];
 
 const privacyGovCerts = [
+  { name: "ISO 27001 Lead Auditor — Exemplar Global", status: "In Progress" },
+  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "Planned" },
   { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
   { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "Complete" },
-  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "In Progress" },
 ];
 
 const processDataCerts = [
@@ -81,9 +83,9 @@ const Certifications = () => {
           Certifications
         </h2>
 
-        <CertSection title="AI Architecture" certs={cloudArchCerts} visible={visible} delayOffset={0} />
-        <CertSection title="AI Governance, Risk & Privacy" certs={privacyGovCerts} visible={visible} delayOffset={cloudArchCerts.length} />
-        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={cloudArchCerts.length + privacyGovCerts.length} />
+        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={0} />
+        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={privacyGovCerts.length} />
+        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={privacyGovCerts.length + cloudArchCerts.length} />
 
         <p className="font-sans text-xs text-muted-foreground mt-4 italic">
           *Professional Training
