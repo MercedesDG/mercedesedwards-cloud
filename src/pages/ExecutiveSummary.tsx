@@ -192,10 +192,9 @@ const ExecutiveSummary = () => (
 
         <h3 className="font-serif text-lg font-bold text-foreground mb-3">AI &amp; Cloud Architecture</h3>
         <ul className="space-y-2 mb-6 list-disc pl-6">
-          <li className="font-sans text-base text-muted-foreground">AI Practitioner (AIF-C01) — AWS — Planned</li>
-          <li className="font-sans text-base text-muted-foreground">Network+ — CompTIA — Planned</li>
-          <li className="font-sans text-base text-muted-foreground">Security+ — CompTIA — Planned</li>
-          <li className="font-sans text-base text-muted-foreground">Cloud+ — CompTIA — Planned</li>
+          <li className="font-sans text-base text-muted-foreground">AI Practitioner (AIF-C01) — AWS — In Progress</li>
+          <li className="font-sans text-base text-muted-foreground">Solutions Architect – Associate (SAA-C03) — AWS — Planned</li>
+          <li className="font-sans text-base text-muted-foreground">Certified GRC Engineer – Practitioner — GRC Engineering Club — Planned</li>
         </ul>
 
         <h3 className="font-serif text-lg font-bold text-foreground mb-3">Process &amp; Data</h3>
