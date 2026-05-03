@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const cloudArchCerts = [
-  { name: "AI Practitioner (AIF-C01) — AWS", status: "Planned" },
-  { name: "Network+ — CompTIA", status: "Planned" },
-  { name: "Security+ — CompTIA", status: "Planned" },
-  { name: "Cloud+ — CompTIA", status: "Planned" },
+  { name: "AI Practitioner (AIF-C01) — AWS", status: "In Progress" },
+  { name: "Solutions Architect – Associate (SAA-C03) — AWS", status: "Planned" },
+  { name: "Certified GRC Engineer – Practitioner — GRC Engineering Club", status: "Planned" },
 ];
 
 const privacyGovCerts = [
