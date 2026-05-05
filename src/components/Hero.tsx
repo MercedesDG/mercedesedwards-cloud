@@ -18,7 +18,7 @@ const Hero = () => {
           Mercedes D. Edwards
         </h1>
         <p className="font-serif text-xl sm:text-2xl font-bold editorial-spacing uppercase text-foreground animate-fade-in-up animate-delay-100">
-          Solutions Architect — AI Enablement
+          AI Enablement &amp; Governance | GRC Engineering &amp; Architecture
         </p>
         <div className="mt-12 flex items-center justify-center gap-4 animate-fade-in-up animate-delay-200">
           <a
