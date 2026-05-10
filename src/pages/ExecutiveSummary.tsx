@@ -18,8 +18,8 @@ const ExecutiveSummary = () => (
           Architecture philosophy, core competencies, and approach
         </p>
         <p className="font-sans text-base text-muted-foreground">
-          Mercedes D. Edwards — AI Enablement | Governance, Risk &amp; Compliance<br />
-          London, U.K. | Targeting New York and Miami with right to work | me@mercedesedwards.cloud | mercedesedwards.cloud
+          Mercedes D. Edwards — AI Governance &amp; GRC Engineering Professional — Applied Governance Architecture<br />
+          London, U.K. | Targeting Miami and New York | me@mercedesedwards.cloud | mercedesedwards.cloud
         </p>
       </div>
     </section>
@@ -50,13 +50,25 @@ const ExecutiveSummary = () => (
           Architecture Philosophy
         </h2>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
-          I design AI and cloud solutions for environments where the real challenge isn't the technology — it's the complexity surrounding it. Regulated industries, legacy systems that can't be replaced overnight, distributed teams that need to adopt new tools without disrupting the work already in motion. My approach starts with understanding the business constraints and governance boundaries before selecting a single service or writing a line of code.
+          I build governance for AI systems that are already live. My work combines applied AI governance, Compliance as Code, and GRC engineering to make complex, high-stakes systems auditable, defensible, and ready for scrutiny.
         </p>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
-          Architecture decisions should be explainable to every stakeholder in the room — the compliance officer, the engineering lead, and the end user who needs it to work on Monday morning. I prioritize defensible trade-offs over theoretical perfection, and I design for what happens after launch day: how systems are maintained, how teams are enabled to operate them independently, and how governance scales alongside the technology.
+          I work with organisations where AI is in production and the governance has to catch up. I start with what actually exists—systems, owners, data flows, decisions—and map those realities to regulatory and framework requirements. From there, I design control matrices, evidence pipelines, and governance programs that teams can operate independently once the engagement ends.
         </p>
+        <h3 className="font-serif text-xl font-bold text-foreground mb-4">Core areas of focus include:</h3>
+        <ul className="space-y-3 mb-8 list-disc pl-6">
+          <li className="font-sans text-base leading-relaxed text-muted-foreground">
+            <strong className="text-foreground">AI Governance &amp; Framework Alignment:</strong> ISO/IEC 42001, NIST AI RMF, EU AI Act, ISO 27001.
+          </li>
+          <li className="font-sans text-base leading-relaxed text-muted-foreground">
+            <strong className="text-foreground">GRC Engineering &amp; Compliance as Code:</strong> OPA/Rego, Terraform, CI/CD policy gates, automated evidence collection, OSCAL-based documentation.
+          </li>
+          <li className="font-sans text-base leading-relaxed text-muted-foreground">
+            <strong className="text-foreground">Privacy &amp; Regulatory Architecture:</strong> GDPR, HIPAA, credit and consumer protection regimes, workplace surveillance law, and cross-border data governance.
+          </li>
+        </ul>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-12">
-          I believe governance is not a constraint on innovation, but the structure that lets innovation scale responsibly.
+          My governance philosophy is straightforward: build systems that can survive their first audit, with clear accountability, continuous evidence, and controls that are engineered into the infrastructure—not maintained through manual effort alone.
         </p>
 
         <div className="section-divider mb-12" />
