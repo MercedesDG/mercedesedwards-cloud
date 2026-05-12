@@ -34,19 +34,19 @@ const About = () => {
         </h2>
         <div className="space-y-6 font-sans text-lg sm:text-xl leading-relaxed text-muted-foreground">
           <p>
-            I build governance for systems that are already live. My work is applied AI governance, grounded in Compliance as Code, GRC engineering, and privacy-conscious architecture, focused on making complex systems auditable, defensible, and ready for scrutiny.
+            I am an AI governance professional who helps organizations securely govern, enable, and scale AI by translating regulatory and ethical obligations into system requirements, engineered controls, evidence pipelines, and practical guardrails for architecture and engineering teams. My work is applied AI governance, grounded in Compliance as Code, GRC engineering, and privacy-conscious architecture, focused on making complex systems auditable, defensible, and ready for scrutiny.
           </p>
           <p>
             My background spans enterprise IT consulting, process engineering, and digital transformation, where I have translated daunting business and regulatory requirements into operationally and technically sound controls. That experience now sits squarely in AI governance: understanding what exists, who owns it, what data it touches, and what obligations apply.
           </p>
           <p>
-            I work with organizations where AI is already in production and the governance has not caught up. That often means ungoverned models, missing documentation, and regulatory exposure that no one has quantified yet. My role is to turn that reality into control frameworks, evidence structures, and workflows that teams can maintain long after implementation.
+            I often work in environments with ungoverned models, missing documentation, and regulatory exposure that no one has fully quantified yet. My role is to turn that reality into control frameworks, evidence structures, and workflows that teams can maintain long after implementation.
           </p>
           <p>
             I do not approach governance as a constraint layered on after the fact, but as the structure that lets innovation survive its first audit. My lens is simple: clear accountability, usable documentation, and infrastructure that supports compliance instead of relying on manual effort and good intentions.
           </p>
           <p className="text-foreground font-medium">
-            Currently based in London, with the right to work in both the U.S. and U.K., and targeting roles in Miami and New York. I am particularly interested in AI Governance and GRC Engineering work that prioritises Compliance as Code and engineered system controls.
+            Currently based in London, with the right to work in both the U.S. and U.K., and targeting roles in Miami and New York. I am particularly interested in AI governance roles that prioritize Compliance as Code and engineered system controls.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 mt-10">

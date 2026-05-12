@@ -7,7 +7,7 @@ interface Project {
   subtitle: string;
   description: string;
   services: string[];
-  status: "Architecture In Progress" | "Coming Soon";
+  status: "Coming Soon";
 }
 
 const projects: Project[] = [
@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "Designed a unified patient data platform integrating a legacy MUMPS-based EHR with modern systems through CDC pipelines, a RAG-powered clinical chatbot, and fine-grained agentic security — all under HIPAA constraints.",
     services: [],
-    status: "Architecture In Progress",
+    status: "Coming Soon",
   },
   {
     industry: "Retail & Supply Chain",
@@ -88,11 +88,7 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         )}
         <div className="flex items-center justify-between">
           <span
-            className={`inline-block px-3 py-1 rounded-full font-sans text-xs editorial-spacing uppercase ${
-              project.status === "Architecture In Progress"
-                ? "bg-accent/20 text-muted-foreground"
-                : "bg-muted text-muted-foreground"
-            }`}
+            className="inline-block px-3 py-1 rounded-full font-sans text-xs editorial-spacing uppercase bg-muted text-muted-foreground"
           >
             {project.status}
           </span>
@@ -125,7 +121,7 @@ const Portfolio = () => (
         Portfolio
       </p>
       <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
-        Prototypes
+        Projects
       </h2>
       <p className="font-sans text-lg text-muted-foreground mb-16 max-w-2xl">
         Three projects. One lifecycle. Build it. Scale it. Keep it running.
