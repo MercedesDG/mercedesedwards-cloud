@@ -50,10 +50,10 @@ const ExecutiveSummary = () => (
           Architecture Philosophy
         </h2>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
-          I build governance for AI systems that are already live. My work combines applied AI governance, Compliance as Code, and GRC engineering to make complex, high-stakes systems auditable, defensible, and ready for scrutiny.
+          I am an AI governance professional who helps organizations securely govern, enable, and scale AI by translating regulatory and ethical obligations into system requirements, engineered controls, evidence pipelines, and practical guardrails for architecture and engineering teams. My work combines applied AI governance, Compliance as Code, and GRC engineering to make complex, high-stakes systems auditable, defensible, and ready for scrutiny.
         </p>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
-          I work with organisations where AI is in production and the governance has to catch up. I start with what actually exists—systems, owners, data flows, decisions—and map those realities to regulatory and framework requirements. From there, I design control matrices, evidence pipelines, and governance programs that teams can operate independently once the engagement ends.
+          I work in environments where governance needs to catch up with how AI is actually being used. I start with what exists—systems, owners, data flows, decisions—and map those realities to regulatory and framework requirements. From there, I design control matrices, evidence pipelines, and governance programs that teams can operate independently once the engagement ends.
         </p>
         <h3 className="font-serif text-xl font-bold text-foreground mb-4">Core areas of focus include:</h3>
         <ul className="space-y-3 mb-8 list-disc pl-6">
