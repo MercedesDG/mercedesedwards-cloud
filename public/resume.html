@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; overflow-x: hidden; }
   body { font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: #2A2A2A; background: #fff; }
 
   header { 
@@ -16,7 +17,8 @@
     padding: 28px 36px 22px; 
     border-bottom: 2px solid #000; 
     position: relative; 
-    overflow: hidden; 
+    overflow: hidden;
+    width: 100%;
   }
   header::before {
     content: '';
@@ -26,27 +28,28 @@
     pointer-events: none;
   }
   header h1, header p, .header-tagline { position: relative; z-index: 1; }
-
   header h1 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #000; letter-spacing: 1px; margin-bottom: 4px; }
   .header-tagline { font-family: 'Playfair Display', serif; font-size: 12px; color: #2A2A2A; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; font-weight: 700; }
   header p { font-size: 11.5px; color: #2A2A2A; letter-spacing: 0.3px; line-height: 1.8; font-weight: 700; }
   header a { color: #000; text-decoration: none; font-weight: 700; }
   header p.auth { font-size: 11px; color: #2A2A2A; margin-top: 2px; font-weight: 700; }
 
-  .body { display: flex; min-height: calc(100vh - 120px); }
+  .body { display: flex; min-height: calc(100vh - 120px); width: 100%; }
 
-  /* Sidebar */
   .sidebar { width: 215px; min-width: 215px; background: #F5F0E8; padding: 26px 18px; }
-  .sidebar-section { margin-bottom: 24px; }
+  .sidebar-section { margin-bottom: 22px; }
   .sidebar h3 { font-family: 'Playfair Display', serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #000; border-bottom: 1px solid #000; padding-bottom: 5px; margin-bottom: 10px; font-weight: 600; }
   .sidebar ul { list-style: none; }
-  .sidebar ul li { font-size: 11px; color: #2A2A2A; margin-bottom: 7px; line-height: 1.4; padding-left: 8px; border-left: 2px solid #be6c35; font-weight: 400; }
+  .sidebar ul li { font-size: 11px; color: #2A2A2A; margin-bottom: 6px; line-height: 1.4; font-weight: 400; }
 
   .skill-group { margin-bottom: 10px; }
   .skill-group .skill-label { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.8px; color: #000; margin-bottom: 3px; font-weight: 600; font-family: 'Playfair Display', serif; }
   .skill-group .skill-items { font-size: 10.5px; color: #2A2A2A; line-height: 1.5; font-weight: 400; }
 
-  /* Main */
+  .cert-group { margin-bottom: 10px; }
+  .cert-group .cert-label { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.8px; color: #000; margin-bottom: 3px; font-weight: 600; font-family: 'Playfair Display', serif; }
+  .cert-group .cert-items { font-size: 10.5px; color: #2A2A2A; line-height: 1.6; font-weight: 400; }
+
   .main { flex: 1; padding: 26px 30px; background: #fff; }
   .section { margin-bottom: 22px; }
   .section h2 { font-family: 'Playfair Display', serif; font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: #000; border-bottom: 1.5px solid #000; padding-bottom: 4px; margin-bottom: 12px; font-weight: 700; }
@@ -66,6 +69,18 @@
   .edu-entry .edu-program { font-style: italic; font-size: 11.5px; color: #be6c35; font-weight: 400; margin-bottom: 3px; }
   .edu-entry .edu-desc { font-size: 11px; color: #2A2A2A; line-height: 1.5; margin-top: 3px; font-weight: 400; }
 
+  @media (max-width: 768px) {
+    header { padding: 22px 20px 18px; }
+    header h1 { font-size: 24px; }
+    .header-tagline { font-size: 11px; }
+    header p { font-size: 11px; line-height: 1.7; word-wrap: break-word; }
+    .body { flex-direction: column; }
+    .sidebar { width: 100%; min-width: 100%; padding: 20px; }
+    .main { padding: 20px; }
+    .entry-header { flex-wrap: wrap; }
+    .entry-date { margin-left: 0; margin-top: 2px; }
+  }
+
   @media print {
     body { font-size: 11px; }
     header { padding: 18px 26px; }
@@ -78,64 +93,91 @@
 
 <header>
   <h1>Mercedes D. Edwards</h1>
-  <div class="header-tagline">Solutions Architect — AI & Cloud Enablement</div>
-  <p>London, U.K. (Relocating to U.S.) &nbsp;|&nbsp; +44 744 818 1424 &nbsp;|&nbsp; <a href="mailto:me@mercedesedwards.cloud">me@mercedesedwards.cloud</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mercedes-edwards">LinkedIn</a> &nbsp;|&nbsp; <a href="https://mercedes-edwards.medium.com">Medium</a> &nbsp;|&nbsp; <a href="https://www.mercedesedwards.cloud">Portfolio</a></p>
+  <div class="header-tagline">AI Governance Professional | Applied AI Governance &amp; GRC Engineering</div>
+  <p>London, U.K. (Relocating to U.S.) &nbsp;|&nbsp; +44 744 818 1424 U.K. | +1 786 767 6222 U.S. &nbsp;|&nbsp; <a href="mailto:me@mercedesedwards.cloud">me@mercedesedwards.cloud</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mercedes-edwards">LinkedIn</a> &nbsp;|&nbsp; <a href="https://mercedes-edwards.medium.com">Medium</a> &nbsp;|&nbsp; <a href="https://www.mercedesedwards.cloud">Portfolio</a></p>
   <p class="auth">Authorized to work: U.S. &amp; U.K.</p>
 </header>
 
 <div class="body">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
 
     <div class="sidebar-section">
-      <h3>Certifications</h3>
+      <h3>Key Strengths</h3>
       <ul>
-        <li>AWS Certified AI Practitioner — Expected Apr 2026</li>
-        <li>AWS Certified Solutions Architect Associate — Expected May 2026</li>
-        <li>Lean Six Sigma Green Belt</li>
-        <li>Process Improvement Specialist</li>
-        <li>SQL — Introduction &amp; Advanced</li>
+        <li>Translating complex regulatory requirements into clear, actionable controls</li>
+        <li>Exercising judgment in ambiguous, evolving regulatory environments</li>
+        <li>Building influence and driving alignment across teams without direct authority</li>
+        <li>Communicating governance concepts to technical and non-technical stakeholders</li>
+        <li>Adaptability across industries, frameworks, and organizational maturity levels</li>
       </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Certifications</h3>
+      <div class="cert-group">
+        <div class="cert-label">AI Governance, Risk &amp; Compliance</div>
+        <div class="cert-items">ISO 27001 Lead Auditor — Exemplar Global — In Progress<br>
+        ISO/IEC 42001 AI Management System — Mastermind — In Progress<br>
+        CGE-P (Certified GRC Engineer - Practitioner) — GRC Engineering Club — In Progress<br>
+        AIGP — IAPP — Planned (Summer 2026)</div>
+      </div>
+      <div class="cert-group">
+        <div class="cert-label">Cloud &amp; Infrastructure</div>
+        <div class="cert-items">Terraform Associate — HashiCorp — In Progress<br>
+        AWS AI Practitioner (AIF-C01) — Planned<br>
+        AWS Solutions Architect Associate (SAA-C03) — Planned</div>
+      </div>
+      <div class="cert-group">
+        <div class="cert-label">Process &amp; Data</div>
+        <div class="cert-items">Lean Six Sigma Green Belt — SSGI<br>
+        Process Improvement Specialist — SSGI<br>
+        SQL — Introduction &amp; Advanced</div>
+      </div>
     </div>
 
     <div class="sidebar-section">
       <h3>Technical Skills</h3>
       <div class="skill-group">
-        <div class="skill-label">Cloud & Architecture</div>
-        <div class="skill-items">AWS (EC2, S3, VPC, IAM, Lambda, RDS, DynamoDB, CloudWatch, CloudFormation), System Design, Well-Architected Framework</div>
+        <div class="skill-label">Governance &amp; Risk</div>
+        <div class="skill-items">Governance Framework Design, Risk Assessment, Controls Mapping, Audit Readiness, Compliance Management, Policy Development, ISO 27001, ISO 42001, NIST AI RMF, NIST CSF, EU AI Act</div>
       </div>
       <div class="skill-group">
-        <div class="skill-label">AI / ML</div>
-        <div class="skill-items">Generative AI Architecture, Foundation Models, RAG, Amazon Bedrock, SageMaker (foundational), Prompt Engineering &amp; Optimization</div>
+        <div class="skill-label">GRC Engineering &amp; Cloud</div>
+        <div class="skill-items">Compliance as Code, Policy-as-Code (OPA/Rego), Infrastructure as Code (Terraform), CI/CD Compliance Pipelines, OSCAL, Automated Evidence Collection, AWS (S3, IAM, Lambda, CloudTrail, Config, Bedrock, Verified Permissions)</div>
       </div>
       <div class="skill-group">
-        <div class="skill-label">Programming & Automation</div>
-        <div class="skill-items">Python, TypeScript, Bash, Infrastructure as Code (Terraform, AWS CDK), CI/CD Pipelines</div>
+        <div class="skill-label">Business Analysis &amp; Process</div>
+        <div class="skill-items">Requirements Elicitation, Process Models, Data Models, User Stories, Acceptance Criteria, Functional &amp; Non-Functional Requirements, CRUD Matrix, Workflow Analysis</div>
       </div>
       <div class="skill-group">
-        <div class="skill-label">Data & Governance</div>
-        <div class="skill-items">Data Modelling, Schema Mapping, SQL, ETL Concepts, Content Lifecycle Management, Compliance Frameworks</div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-label">Platforms & Tools</div>
-        <div class="skill-items">ServiceNow, Salesforce CRM, AWS Console, Git, Allscripts EMR</div>
+        <div class="skill-label">Platforms &amp; Tools</div>
+        <div class="skill-items">AWS, Vanta, Terraform, Git/GitHub Actions, Cosign, Salesforce, ServiceNow, Jira, Confluence, Copilot, Claude, Perplexity</div>
       </div>
     </div>
 
     <div class="sidebar-section">
       <h3>Core Competencies</h3>
       <ul>
-        <li>Enablement Program Design</li>
-        <li>Knowledge Management</li>
-        <li>Business &amp; Systems Analysis</li>
-        <li>Process Architecture &amp; Governance</li>
-        <li>Requirements Engineering</li>
-        <li>Workshop Facilitation</li>
-        <li>Stakeholder Management</li>
+        <li>Governance Framework Design</li>
+        <li>Risk Assessment &amp; Controls Mapping</li>
+        <li>Regulatory Compliance (AI, Privacy, InfoSec)</li>
+        <li>Controls-to-Code Translation</li>
+        <li>Evidence Architecture &amp; Audit Readiness</li>
+        <li>Cross-Functional Stakeholder Management</li>
+        <li>Process Architecture &amp; Optimization</li>
+        <li>Client-Facing Consulting</li>
+        <li>Workshop Facilitation &amp; Training</li>
         <li>Change Management</li>
-        <li>UAT &amp; Quality Assurance</li>
-        <li>Mentorship &amp; Coaching</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Professional Affiliations</h3>
+      <ul>
+        <li>IAPP — Member, 2026</li>
+        <li>GRC Engineering Club — Member, 2026</li>
+        <li>WiCyS — Member, 2026</li>
       </ul>
     </div>
 
@@ -148,12 +190,11 @@
 
   </aside>
 
-  <!-- MAIN CONTENT -->
   <main class="main">
 
     <div class="section">
       <h2>Profile</h2>
-      <p class="profile-text">Solutions architect with a foundation in business analysis, process governance, and enterprise technology consulting. Experienced in designing enablement systems, governance frameworks, and scalable operational workflows across complex, multi-stakeholder environments. Proven ability to translate organizational pain points into structured solutions — from commercial governance architectures serving 50+ member sales teams to AI-powered automation workflows for client-facing professionals. Brings deep expertise in the full enablement lifecycle — analysis, design, development, implementation, and evaluation — combined with AWS cloud architecture and generative AI capabilities.</p>
+      <p class="profile-text">Applied AI governance and GRC engineering professional with deep experience in framework design, risk assessment, compliance operations, and cross-functional stakeholder management across enterprise environments. Proven track record of identifying systemic governance gaps, designing and implementing controls frameworks, and operationalizing compliance workflows spanning Sales, Finance, Operations, and Technology teams. Background in business analysis and process architecture provides a strong foundation for translating regulatory requirements into enforceable system controls, automated evidence pipelines, and auditable processes. Specialized in making AI systems that are already in production audit-defensible — mapping controls to frameworks (ISO 42001, NIST AI RMF, EU AI Act, ISO 27001), designing governance programs, and building for the teams that will run them independently.</p>
     </div>
 
     <div class="section">
@@ -165,11 +206,11 @@
           <span class="entry-date">Jul 2025 – Present &nbsp;|&nbsp; Remote</span>
         </div>
         <div class="entry-title">Founder &amp; Principal Consultant</div>
-        <p class="entry-desc">Technology and business consulting practice advising small business owners on brand strategy, AI integration, and operational process improvement. Specializes in embedding AI tools into client workflows to drive efficiency and improved outcomes.</p>
+        <p class="entry-desc">Technology and AI consulting practice advising small business clients on operational process improvement, AI integration, and governance-aware workflow automation.</p>
         <ul>
-          <li>Designed and deployed an AI-assisted lead capture and client management solution for real estate professionals, integrating existing technologies into a cohesive automated workflow</li>
-          <li>Developed and delivered prompt engineering training for non-technical professionals — designing, testing, and iterating prompts to optimize LLM outputs for business applications including content creation, client communications, and workflow automation</li>
-
+          <li>Designed and documented AI-assisted workflows with governance considerations including data flow mapping, access controls, and process logic documentation — ensuring traceability and auditability across automated systems</li>
+          <li>Developed AI governance guidelines for non-technical clients adopting generative AI tools, covering acceptable use, data handling, and output quality controls</li>
+          <li>Building applied AI governance portfolio through scenario-based projects spanning healthcare, manufacturing, and luxury retail — producing controls matrices, risk registers, model documentation, and evidence architecture designs aligned to ISO 42001, NIST AI RMF, EU AI Act, and ISO 27001</li>
         </ul>
       </div>
 
@@ -178,13 +219,14 @@
           <span class="entry-org">The Process Play</span>
           <span class="entry-date">May 2023 – Sep 2024 &nbsp;|&nbsp; London, U.K.</span>
         </div>
-        <div class="entry-title">Consultant — Business Analysis &amp; Enablement</div>
-        <p class="entry-desc">Business and process consultant delivering digital transformation and enablement projects across supply chain operations, HR service delivery, and IT service management within a ServiceNow implementation practice.</p>
+        <div class="entry-title">Consultant — Business Analysis &amp; Process Governance</div>
+        <p class="entry-desc">Client-facing consultant delivering enterprise digital transformation projects with a focus on process governance, requirements traceability, and compliance-aware system design across supply chain operations, HR service delivery, and IT service management.</p>
         <ul>
-          <li>Facilitated workshops and requirements engineering across enterprise implementations, producing process maps, user stories, and systems analysis documentation aligned to operational outcomes</li>
-          <li>Managed a tri-party enablement partnership between ServiceNow, Northeastern University London, and The Process Play — redesigned the NextGen UK program curriculum around project-based learning and employability outcomes, achieving stronger engagement than prior cohorts</li>
-          <li>Contributed to a supply chain transformation consolidating fragmented order management from ERP and legacy systems into ServiceNow, with Salesforce CRM integration across ERP, document storage, and productivity systems</li>
-          <li>Facilitated discovery workshops for HR Service Delivery, ITSM, and Employee Center implementations, translating operational needs into structured process designs for development teams</li>
+          <li>Facilitated governance-focused workshops with cross-functional stakeholders to define business requirements, establish process controls, and document compliance-aligned acceptance criteria</li>
+          <li>Produced traceable requirements documentation — ensuring business, functional, and non-functional requirements maintained clear lineage from regulatory and policy sources through to implemented controls</li>
+          <li>Mapped data transformations between legacy ERP systems and cloud platforms, identifying governance gaps in data handling, access controls, and audit trail coverage across fragmented workflows</li>
+          <li>Supported QA and UAT teams during testing phases, verifying that delivered features adhered to documented requirements and maintained compliance with defined governance controls</li>
+          <li>Managed a tri-party enablement partnership between ServiceNow, Northeastern University London, and The Process Play — establishing program governance and curriculum standards for a national technology education initiative</li>
         </ul>
       </div>
 
@@ -194,15 +236,12 @@
           <span class="entry-date">Apr 2020 – Mar 2021 &nbsp;|&nbsp; London, U.K.</span>
         </div>
         <div class="entry-title">Operations Manager &nbsp;|&nbsp; VP, Diversity &amp; Inclusion Committee</div>
-        <p class="entry-desc">Led operations for a national career transition and executive coaching practice. Owned cross-functional process governance, operational enablement, and compliance across a 50+ member sales organization spanning the UK and Ireland.</p>
+        <p class="entry-desc">Led operations and cross-functional governance for a national career transition and executive coaching practice spanning 50+ team members across the UK and Ireland. Owned governance framework design, compliance oversight, and process improvement initiatives.</p>
         <ul>
-          <li>Architected and implemented a tiered commercial governance framework — introduced director-level review thresholds, digital contract workflows, and cross-functional approval processes across Sales, Finance, and Operations to replace an ungoverned contracting environment</li>
-          <li>Designed an Excel-based contract assessment tool enabling sales teams to self-determine approval requirements, reducing bottlenecks while enforcing governance compliance</li>
-          <li>Established a Commercial Governance Committee bringing together Sales, Finance, and Operations directors — creating the oversight structure needed for resource planning, financial feasibility review, and engagement quality control</li>
-          <li>Organized and migrated contracts into Salesforce with automated renewal alerts, recovering visibility into expiring agreements that were previously untracked</li>
-          <li>Increased practice revenue by 6% through improved client engagement and program adoption strategies</li>
-          <li>Designed and led COVID-19 return-to-office operational procedures, managing compliance with evolving government guidelines while maintaining service continuity</li>
-          <li>Created a return-to-work D&amp;I program for returning parents, piloted internally and rebranded as a commercial offering</li>
+          <li>Identified systemic governance failures across the commercial lifecycle — missing contracts, inconsistent terms, absence of financial oversight — and designed a tiered commercial governance framework with digital contract workflows, cross-functional approval processes, and automated compliance alerts</li>
+          <li>Established a Commercial Governance Committee bringing together Sales, Finance, and Operations directors — creating structured oversight for resource planning, financial feasibility review, and engagement quality control</li>
+          <li>Developed and enforced governance policies for COVID-19 return-to-office operations, ensuring compliance with evolving regulatory guidelines while maintaining service continuity across distributed teams</li>
+          <li>Increased practice revenue by 6% through governance-driven improvements to client engagement processes and program adoption controls</li>
         </ul>
       </div>
 
@@ -212,22 +251,13 @@
           <span class="entry-date">Sep 2019 – Mar 2020 &nbsp;|&nbsp; London, U.K.</span>
         </div>
         <div class="entry-title">Sales Operations Analyst</div>
-        <p class="entry-desc">Managed end-to-end contract compliance and audit readiness across a national sales organization. Identified systemic governance gaps that led to a full commercial process overhaul and direct promotion to Operations Manager.</p>
+        <p class="entry-desc">Managed end-to-end contract compliance and audit readiness across a national sales organization. Identified systemic governance failures that triggered a full governance overhaul and earned promotion to Operations Manager.</p>
         <ul>
-          <li>Identified and escalated critical governance failures in the sales contracting process — missing contracts, unfavorable terms, and lack of financial oversight — triggering the organization's first structured commercial governance initiative</li>
-          <li>Digitized the contract signing process, replacing manual workflows and introducing a digital contract template to standardize terms and accelerate execution ahead of a planned DocuSign implementation</li>
-          <li>Instituted a weekly cross-functional contract review meeting between Sales and Finance leadership, creating the first regular touchpoint for commercial oversight</li>
-          <li>Managed Salesforce data integrity for contract records, ensuring audit-readiness and accurate reporting across the UK and Ireland</li>
+          <li>Conducted governance audit of the sales contracting lifecycle, mapping business processes and data flows to identify critical control gaps — missing contracts, inconsistent terms, and lack of financial oversight</li>
+          <li>Designed and implemented standardized contract controls, introducing digital templates, automated workflows, and governance checkpoints to replace manual, unauditable processes</li>
+          <li>Instituted a weekly cross-functional governance review between Sales and Finance leadership, creating the first structured oversight mechanism for commercial risk management</li>
+          <li>Managed Salesforce data integrity for contract records, ensuring audit-readiness, accurate reporting, and compliance with internal governance standards</li>
         </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-org">Lightbulb Digital</span>
-          <span class="entry-date">Aug 2018 – Mar 2020 &nbsp;|&nbsp; London, U.K.</span>
-        </div>
-        <div class="entry-title">Business Consultant &amp; Founder</div>
-        <p class="entry-desc">Founded and operated a boutique digital consultancy delivering branding, marketing strategy, website design, and brand identity for small business clients.</p>
       </div>
 
       <div class="entry">
@@ -237,9 +267,9 @@
         </div>
         <div class="entry-title">Accounts Receivable Analyst</div>
         <ul>
-          <li>Served as subject-matter expert in insurance carrier claims processing and denial logic on a specialized escalation team within a compliance-driven healthcare environment</li>
-          <li>Conducted trend analysis and developed payer-specific workflows to improve claims resolution rates across the revenue cycle</li>
-          <li>Contributed to the rollout of the Allscripts EMR system across multiple practices, supporting data migration and user adoption</li>
+          <li>Operated within a compliance-driven healthcare environment, managing insurance carrier claims processing within HIPAA and payer-specific regulatory frameworks</li>
+          <li>Developed payer-specific workflows and conducted trend analysis to improve claims resolution rates, ensuring adherence to billing compliance standards across the revenue cycle</li>
+          <li>Contributed to the Allscripts EMR system rollout across multiple practices — supporting requirements gathering, data migration governance, and end-user adoption in a regulated healthcare setting</li>
         </ul>
       </div>
 
@@ -248,14 +278,31 @@
     <div class="section">
       <h2>Education</h2>
 
-
-    <div class="edu-entry">
+      <div class="edu-entry">
         <div class="entry-header">
           <span class="entry-org">Western Governors University</span>
-          <span class="entry-date">Expected 2027</span>
+          <span class="entry-date">Expected Graduation: 2027</span>
         </div>
-        <div class="edu-program">Bachelor of Science, Information Technology </div>
-        <p class="edu-desc">Competency-based program covering cloud computing, cybersecurity, networking, data management, AI, IT governance, and Python automation. Includes preparation for AWS Cloud Practitioner, CompTIA A+, Network+, Security+, and Cloud+ certifications. Curriculum aligned to COBIT, ITIL, and ISO frameworks.</p>
+        <div class="edu-program">Bachelor of Science, Information Technology</div>
+        <p class="edu-desc">Competency-based program spanning cloud computing, cybersecurity, networking, data management, and Python automation — with built-in preparation for CompTIA Cloud+ and Security+ certifications. Coursework in IT governance, risk management, and AI foundations directly supports my focus on architecting compliant, governed AI systems.</p>
+      </div>
+
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">GRC Mastery</span>
+          <span class="entry-date">May 2026</span>
+        </div>
+        <div class="edu-program">Cybersecurity GRC Professional Program</div>
+        <p class="edu-desc">Comprehensive cybersecurity GRC training leading to ISO 27001 Lead Auditor certification (Exemplar Global accredited). Covers information security risk management, security audit methodology, asset management, identity and access management, data security, incident response, third-party risk management, and NIST CSF capstone project.</p>
+      </div>
+
+      <div class="edu-entry">
+        <div class="entry-header">
+          <span class="entry-org">GRC Engineering Club</span>
+          <span class="entry-date">May 2026 – Present</span>
+        </div>
+        <div class="edu-program">CGE-P Certification Training &amp; Labs</div>
+        <p class="edu-desc">Hands-on GRC engineering training covering Infrastructure-as-Code (Terraform), Policy-as-Code (OPA/Rego), CI/CD compliance pipelines, automated evidence management, and OSCAL-based control documentation. Capstone project applies all four layers to a real application under a declared compliance framework.</p>
       </div>
 
       <div class="edu-entry">
@@ -264,7 +311,7 @@
           <span class="entry-date">May 2026</span>
         </div>
         <div class="edu-program">Cloud Engineering &amp; Architecture</div>
-        <p class="edu-desc">Intensive AWS program covering cloud architecture, system design, networking, compute, storage, databases, security, and AI/ML services. Includes infrastructure as code with Terraform and AWS CDK, CI/CD pipelines, DevOps practices, automation with TypeScript, and Python programming.</p>
+        <p class="edu-desc">Intensive AWS program covering cloud architecture, system design, AI/ML services, infrastructure as code, CI/CD pipelines, and Python programming.</p>
       </div>
 
       <div class="edu-entry">
@@ -273,25 +320,7 @@
           <span class="entry-date">Jan 2024 – Ongoing</span>
         </div>
         <div class="edu-program">Generative AI Architecture &amp; Cloud Architecture</div>
-        <p class="edu-desc">300+ hour professional training and mentorship program in generative AI architecture under David Linthicum. Covers a 60-hour generative AI deployment course, live weekly case studies, and architectural review across operations, technology, and workforce dimensions.</p>
-      </div>
-
-      <div class="edu-entry">
-        <div class="entry-header">
-          <span class="entry-org">Northeastern University London</span>
-          <span class="entry-date">Apr 2023</span>
-        </div>
-        <div class="edu-program">Service Management &amp; Design with ServiceNow</div>
-        <p class="edu-desc">Bootcamp in collaboration with ServiceNow's Rise Up program focused on designing IT solutions and managing technical implementation processes.</p>
-      </div>
-
-      <div class="edu-entry">
-        <div class="entry-header">
-          <span class="entry-org">Sanford Brown Institute</span>
-          <span class="entry-date">May 2013</span>
-        </div>
-        <div class="edu-program">Medical Billing &amp; Coding</div>
-        <p class="edu-desc">Graduated top 3 in class. Awarded a full-time internship with Northwell Health and accepted a permanent position upon completion.</p>
+        <p class="edu-desc">300+ hour professional training in generative AI architecture under David Linthicum. Covers AI system design, deployment patterns, and architectural review — providing the technical foundation for governing AI systems across operations, technology, and workforce dimensions.</p>
       </div>
 
     </div>
@@ -301,29 +330,38 @@
 
       <div class="entry">
         <div class="entry-header">
+          <span class="entry-org">ChemLINK — Chemical Manufacturing AI Governance</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <div class="entry-title">GRC Consultant — AI Governance &amp; Compliance Engineering</div>
+        <p class="entry-desc">AI governance engagement for a specialty chemicals manufacturer with three ungoverned AI systems in production (predictive maintenance, automated substance screening, demand forecasting). Produced AI system inventory and risk register, unified controls matrix across ISO 42001, NIST AI RMF, EU AI Act, and ISO 27001, model cards, evidence architecture design, and governance operating model for ongoing compliance.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">Maison Verre — Luxury Retail AI Governance &amp; Privacy</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <div class="entry-title">GRC Consultant — AI Governance, Privacy &amp; Financial Compliance</div>
+        <p class="entry-desc">Comprehensive AI governance assessment for a luxury jewelry house operating five AI systems across gemstone authentication, customer profiling, BNPL credit scoring, loss prevention analytics, and demand forecasting. Addressed active GDPR inquiry, EU AI Act high-risk classification, consumer credit regulation, and workplace surveillance law across four jurisdictions. Delivered DPIA, fairness assessment, unified controls matrix, and jurisdictional compliance framework.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-org">CGE-P Capstone — Healthcare GRC Engineering</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <div class="entry-title">GRC Engineer — Compliance as Code</div>
+        <p class="entry-desc">GRC engineering project for a telehealth Patient Intake API: Infrastructure-as-Code (Terraform), Policy-as-Code (OPA/Rego), CI/CD compliance pipeline with automated evidence collection, Cosign-signed evidence bundles with S3 Object Lock, and OSCAL component documentation. Framework alignment to HIPAA Security Rule.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
           <span class="entry-org">Commercial Governance Architecture — LHH UK &amp; Ireland</span>
           <span class="entry-date">Sep 2019 – Mar 2021</span>
         </div>
-        <div class="entry-title">Architect &amp; Program Lead</div>
-        <p class="entry-desc">Identified systemic governance failures across a 50+ member national sales organization and designed a tiered commercial governance framework spanning Sales, Finance, and Operations. Introduced digital contract workflows, automated Salesforce alerts, a self-service assessment tool, and a cross-functional governance committee — transforming an ungoverned process into a structured, auditable system.</p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-org">ServiceNow Implementation — Supply Chain Operations Transformation</span>
-          <span class="entry-date">May 2023 – Jul 2024</span>
-        </div>
-        <div class="entry-title">Business &amp; Process Consultant</div>
-        <p class="entry-desc">Led analysis for an extended digital transformation consolidating fragmented order management from ERP and legacy systems into ServiceNow. Integrated Salesforce CRM with ERP, document storage, productivity suite, and email. Delivered process mapping, user stories, live demos, and UAT support.</p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-org">NextGen UK Enablement Program — ServiceNow RiseUp Partnership</span>
-          <span class="entry-date">Jun 2024 – Oct 2024</span>
-        </div>
-        <div class="entry-title">Program Partnership Manager</div>
-        <p class="entry-desc">Managed tri-party partnership redesigning the NextGen UK enablement program curriculum around project-based learning and employable skills, achieving stronger engagement and outcomes than prior cohorts.</p>
+        <div class="entry-title">Governance Framework Design &amp; Implementation</div>
+        <p class="entry-desc">Identified systemic governance failures across a 50+ member national sales organization through comprehensive process and controls audit. Designed and implemented a tiered commercial governance framework spanning Sales, Finance, and Operations — introducing digital workflows, automated compliance alerts, cross-functional governance committee, and structured oversight for resource planning and financial risk review.</p>
       </div>
 
     </div>
