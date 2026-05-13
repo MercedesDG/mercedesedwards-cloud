@@ -19,7 +19,7 @@ const ExecutiveSummary = () => (
         </p>
         <p className="font-sans text-base text-muted-foreground">
           Mercedes D. Edwards — AI Governance &amp; GRC Engineering Professional — Applied Governance Architecture<br />
-          London, U.K. | Targeting Miami and New York | me@mercedesedwards.cloud | mercedesedwards.cloud
+          London, U.K. | Targeting Miami and New York | mercedesedwards.cloud
         </p>
       </div>
     </section>
