@@ -4,7 +4,9 @@ const specialties = [
   "AI Governance",
   "AI Operations & Observability",
   "Agentic AI Controls",
+  "AI Enablement",
 ];
+
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
