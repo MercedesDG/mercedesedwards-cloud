@@ -17,18 +17,18 @@ const artifacts: Artifact[] = [
     link: "/artifacts/executive-summary",
   },
   {
-    title: "Governance & Compliance",
-    description: "Audit frameworks, consent models, and security architecture across projects — Coming Soon",
+    title: "AI Governance Frameworks",
+    description: "Controls matrices, risk registers, AI system inventories, risk classification documents, and governance charters. The strategic documents that define how an organization governs its AI systems.",
     status: "Coming Soon",
   },
   {
-    title: "Reference Architectures",
-    description: "Reusable patterns for regulated AI integration and event-driven systems — Coming Soon",
+    title: "Compliance Engineering",
+    description: "Policy-as-Code, Infrastructure-as-Code, CI/CD compliance pipelines, evidence architectures, and OSCAL documentation. The technical artifacts that prove governance is engineered into infrastructure, not maintained manually.",
     status: "Coming Soon",
   },
   {
-    title: "Technology Roadmaps",
-    description: "Multi-year infrastructure evolution aligned with business milestones — Coming Soon",
+    title: "Model Governance & Regulatory Analysis",
+    description: "Model cards, DPIAs, fairness assessments, jurisdictional compliance matrices, and gap analyses. The system-level documentation that makes individual AI systems audit-defensible.",
     status: "Coming Soon",
   },
 ];
