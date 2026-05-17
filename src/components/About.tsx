@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const specialties = [
-  "Legacy Integration",
-  "Agentic AI Security",
-  "AI Operations & Observability",
   "AI Governance",
+  "AI Operations & Observability",
+  "Agentic AI Controls",
 ];
 
 const About = () => {
