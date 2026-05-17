@@ -15,7 +15,7 @@ const ExecutiveSummary = () => (
           Executive Summary
         </h1>
         <p className="font-sans text-xl text-muted-foreground mb-3">
-          Architecture philosophy, core competencies, and approach
+          Governance philosophy, core competencies, and approach
         </p>
         <p className="font-sans text-base text-muted-foreground">
           Mercedes D. Edwards — AI Governance &amp; GRC Engineering Professional — Applied Governance Architecture<br />
@@ -45,9 +45,9 @@ const ExecutiveSummary = () => (
     {/* Document Body */}
     <div className="container max-w-4xl mx-auto px-6 py-12">
       <div className="bg-white rounded-lg border border-border p-8 md:p-12 shadow-sm">
-        {/* Architecture Philosophy */}
+        {/* Governance Philosophy */}
         <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
-          Architecture Philosophy
+          Governance Philosophy
         </h2>
         <p className="font-sans text-lg leading-relaxed text-muted-foreground mb-8">
           I am an AI governance professional who helps organizations securely govern, enable, and scale AI by translating regulatory and ethical obligations into system requirements, engineered controls, evidence pipelines, and practical guardrails for architecture and engineering teams. My work combines applied AI governance, Compliance as Code, and GRC engineering to make complex, high-stakes systems auditable, defensible, and ready for scrutiny.

@@ -12,7 +12,7 @@ interface Artifact {
 const artifacts: Artifact[] = [
   {
     title: "Executive Summary",
-    description: "Architecture philosophy, core competencies, and approach",
+    description: "Governance philosophy, core competencies, and approach",
     status: "View Document",
     link: "/artifacts/executive-summary",
   },
