@@ -45,7 +45,7 @@ const About = () => {
             I do not approach governance as a constraint layered on after the fact, but as the structure that lets innovation survive its first audit. My lens is simple: clear accountability, usable documentation, and infrastructure that supports compliance instead of relying on manual effort and good intentions.
           </p>
           <p className="text-foreground font-medium">
-            Currently based in London, with the right to work in both the U.S. and U.K., and targeting roles in Miami and New York. I am particularly interested in AI governance roles that prioritize Compliance as Code and engineered system controls.
+            I am targeting roles in Miami and New York - with particular interest in AI governance roles that prioritize Compliance as Code and engineered system controls. Right to work in both the U.S. and U.K.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 mt-10">
