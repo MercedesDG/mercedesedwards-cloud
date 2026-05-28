@@ -3,15 +3,19 @@ import { useEffect, useRef, useState } from "react";
 const cloudArchCerts = [
   { name: "Certified GRC Engineer – Practitioner — GRC Engineering Club", status: "In Progress" },
   { name: "Terraform Associate (004) — HashiCorp", status: "Planned" },
-  { name: "AI Practitioner (AIF-C01) — AWS", status: "Planned" },
-  { name: "Solutions Architect – Associate (SAA-C03) — AWS", status: "Planned" },
 ];
 
 const privacyGovCerts = [
-  { name: "ISO 27001 Lead Auditor — Exemplar Global", status: "In Progress" },
-  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "Planned" },
-  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
+  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "In Progress" },
+  { name: "ISO/IEC 42001 Lead Implementer — PECB | RECONN", status: "Planned" },
+  { name: "ISO/IEC 27001 Lead Auditor — Exemplar Global | GRC Mastery", status: "Complete" },
   { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "Complete" },
+  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
+];
+
+const educationEntries = [
+  { name: "Bachelor of Science, Information Technology (BSIT) — WGU, 2027", status: "In Progress" },
+  { name: "AI Architecture | Enterprise Architecture, Continuous Professional Training — GoCloud Careers*", status: "Ongoing" },
 ];
 
 const processDataCerts = [
@@ -80,12 +84,13 @@ const Certifications = () => {
           Credentials
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-12">
-          Certifications
+          Education & Certifications
         </h2>
 
-        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={0} />
-        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={privacyGovCerts.length} />
-        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={privacyGovCerts.length + cloudArchCerts.length} />
+        <CertSection title="Education" certs={educationEntries} visible={visible} delayOffset={0} />
+        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={educationEntries.length} />
+        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length} />
+        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length + cloudArchCerts.length} />
 
         <p className="font-sans text-xs text-muted-foreground mt-4 italic">
           *Professional Training
