@@ -56,7 +56,7 @@ const CertSection = ({
 
 const statusPill = (status: string) => {
   const base = "font-sans text-xs editorial-spacing uppercase px-3 py-1 rounded-full text-foreground";
-  if (status === "Complete") return `${base} bg-green-200`;
+  if (status === "Complete" || status === "Ongoing") return `${base} bg-green-200`;
   if (status === "In Progress") return `${base} bg-accent/20`;
   return `${base} bg-muted`;
 };
