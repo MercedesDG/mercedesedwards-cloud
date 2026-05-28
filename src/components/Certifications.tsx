@@ -3,15 +3,19 @@ import { useEffect, useRef, useState } from "react";
 const cloudArchCerts = [
   { name: "Certified GRC Engineer – Practitioner — GRC Engineering Club", status: "In Progress" },
   { name: "Terraform Associate (004) — HashiCorp", status: "Planned" },
-  { name: "AI Practitioner (AIF-C01) — AWS", status: "Planned" },
-  { name: "Solutions Architect – Associate (SAA-C03) — AWS", status: "Planned" },
 ];
 
 const privacyGovCerts = [
-  { name: "ISO 27001 Lead Auditor — Exemplar Global", status: "In Progress" },
-  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "Planned" },
-  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
+  { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "In Progress" },
+  { name: "ISO/IEC 42001 Lead Implementer — PECB | RECONN", status: "Planned" },
+  { name: "ISO/IEC 27001 Lead Auditor — Exemplar Global | GRC Mastery", status: "Complete" },
   { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "Complete" },
+  { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
+];
+
+const educationEntries = [
+  { name: "Bachelor of Science, Information Technology (BSIT) — WGU, 2027", status: "In Progress" },
+  { name: "AI Architecture | Enterprise Architecture, Continuous Professional Training — GoCloud Careers*", status: "Ongoing" },
 ];
 
 const processDataCerts = [
