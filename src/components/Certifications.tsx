@@ -84,12 +84,13 @@ const Certifications = () => {
           Credentials
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-12">
-          Certifications
+          Education & Certifications
         </h2>
 
-        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={0} />
-        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={privacyGovCerts.length} />
-        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={privacyGovCerts.length + cloudArchCerts.length} />
+        <CertSection title="Education" certs={educationEntries} visible={visible} delayOffset={0} />
+        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={educationEntries.length} />
+        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length} />
+        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length + cloudArchCerts.length} />
 
         <p className="font-sans text-xs text-muted-foreground mt-4 italic">
           *Professional Training
