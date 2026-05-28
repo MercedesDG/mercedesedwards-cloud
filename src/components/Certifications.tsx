@@ -83,11 +83,27 @@ const Certifications = () => {
         <p className="font-sans text-sm editorial-spacing uppercase text-accent mb-4">
           Credentials
         </p>
+
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-12">
-          Education & Certifications
+          Education
+        </h2>
+        <div className="space-y-0 mb-20">
+          {educationEntries.map((c, i) => (
+            <div
+              key={c.name}
+              className={`flex items-center justify-between py-5 border-b border-border transition-all duration-500 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}
+              style={{ transitionDelay: `${i * 100}ms` }}
+            >
+              <span className="font-sans text-lg sm:text-xl text-foreground">{c.name}</span>
+              <span className={statusPill(c.status)}>{c.status}</span>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-12">
+          Certifications
         </h2>
 
-        <CertSection title="Education" certs={educationEntries} visible={visible} delayOffset={0} />
         <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={educationEntries.length} />
         <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length} />
         <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length + cloudArchCerts.length} />
