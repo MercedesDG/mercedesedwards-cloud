@@ -34,7 +34,7 @@ const Footer = () => (
           <Mail className="w-4 h-4" /> Email
         </a>
         <a
-          href="/resume.html"
+          href="/Mercedes-Edwards-Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 font-sans text-sm editorial-spacing uppercase text-foreground hover:text-accent transition-colors"
