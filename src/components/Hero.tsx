@@ -28,7 +28,7 @@ const Hero = () => {
             Explore Portfolio
           </a>
           <a
-            href="/Mercedes-Edwards-Resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-foreground text-primary-foreground px-8 py-3 font-sans text-sm editorial-spacing uppercase hover:bg-accent transition-colors duration-300"
