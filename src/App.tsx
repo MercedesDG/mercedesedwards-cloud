@@ -8,6 +8,7 @@ import Index from "./pages/Index.tsx";
 import Prompts from "./pages/Prompts.tsx";
 import ExecutiveSummary from "./pages/ExecutiveSummary.tsx";
 import Governance from "./pages/Governance.tsx";
+import Resume from "./pages/Resume.tsx";
 
 import NotFound from "./pages/NotFound.tsx";
 
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/prompts" element={<Prompts />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/artifacts/executive-summary" element={<ExecutiveSummary />} />
           <Route path="/artifacts/governance" element={<Governance />} />
           
