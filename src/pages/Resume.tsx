@@ -107,11 +107,10 @@ const Resume = () => (
           <div>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-5">Certifications</h2>
             <ul className="list-disc pl-6 space-y-2 font-sans text-base text-muted-foreground">
-              <li>ISO 27001 Lead Auditor — In Progress</li>
-              <li>CGE-P — In Progress</li>
-              <li>AIGP — Planned</li>
-              <li>ISO/IEC 42001 Lead Implementer — Planned</li>
-              <li>TOGAF I &amp; II — Planned</li>
+              <li>AIGP — In Progress</li>
+              <li>ISO/IEC 42001 Lead Auditor — Planned</li>
+              <li>ISO/IEC 27701 Lead Auditor — Planned</li>
+              <li>ISO 27001 Lead Auditor</li>
               <li>Lean Six Sigma Green Belt — SSGI</li>
             </ul>
           </div>
