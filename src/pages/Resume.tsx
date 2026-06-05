@@ -15,7 +15,7 @@ const Resume = () => (
           Mercedes D. Edwards
         </h1>
         <p className="font-sans text-xl text-muted-foreground mb-3">
-          AI Governance Professional | Applied AI Governance &amp; Enterprise Architecture
+          AI Governance Professional | AI Enablement through Governance, Process &amp; Business Architecture
         </p>
         <p className="font-sans text-base text-muted-foreground">
           me@mercedesedwards.cloud | LinkedIn: linkedin.com/in/mercedes-edwards
@@ -46,7 +46,7 @@ const Resume = () => (
         <section className="mb-10">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">Profile</h2>
           <p className="font-sans text-base leading-relaxed text-muted-foreground">
-            Applied AI governance and enterprise architecture professional with deep experience in framework design, risk assessment, compliance operations, and cross-functional stakeholder management across enterprise environments. Specialized in making AI systems that are already in production audit-defensible by mapping controls to frameworks including ISO 42001, NIST AI RMF, EU AI Act, and ISO 27001.
+            AI governance and business architecture professional with a proven track record of identifying systemic process and governance gaps, operationalizing compliance-focused workflows spanning Sales, Finance, Operations, and Technology teams across international organizations. Background in business analysis, process optimization, value mapping, and AI enablement and governance provides a strong foundation for steering enterprise-wide AI adoption that adheres to risk-profile and compliance. Specialized in identifying AI use cases aligned with business and growth objectives, managing stakeholders and champion teams throughout technology adoption, creating technical education and training when the need is identified, and translating regulatory requirements into enforceable system controls. Committed to responsible AI adoption as a force for real social good.
           </p>
         </section>
 
