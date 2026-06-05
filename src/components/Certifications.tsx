@@ -7,7 +7,8 @@ const cloudArchCerts = [
 
 const privacyGovCerts = [
   { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "In Progress" },
-  { name: "ISO/IEC 42001 Lead Implementer — PECB | RECONN", status: "Planned" },
+  { name: "ISO/IEC 42001 Lead Auditor — MasterMind", status: "Planned" },
+  { name: "ISO/IEC 27701 Lead Auditor — MasterMind", status: "Planned" },
   { name: "ISO/IEC 27001 Lead Auditor — Exemplar Global | GRC Mastery", status: "Complete" },
   { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "Complete" },
   { name: "Ethical Principles of Conversational AI — Linux Foundation", status: "Complete" },
