@@ -99,7 +99,7 @@ const Resume = () => (
           <div>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-5">Education</h2>
             <div className="space-y-5 font-sans text-base text-muted-foreground">
-              <p><strong className="text-foreground">Western Governors University</strong><br />Bachelor of Science, Information Technology — Expected 2027</p>
+              <p><strong className="text-foreground">Western Governors University</strong><br />Bachelor of Science, Information Technology — Expected Spring 2027</p>
               <p><strong className="text-foreground">GRC Mastery</strong><br />Cybersecurity GRC Professional Program — May 2026</p>
               <p><strong className="text-foreground">GoCloud Careers</strong><br />Enterprise Architecture &amp; Generative AI Architecture — Ongoing</p>
             </div>
@@ -111,7 +111,7 @@ const Resume = () => (
               <li>ISO/IEC 42001 Lead Auditor — Planned</li>
               <li>ISO/IEC 27701 Lead Auditor — Planned</li>
               <li>ISO 27001 Lead Auditor</li>
-              <li>Lean Six Sigma Green Belt — SSGI</li>
+              <li>Lean Six Sigma Green Belt</li>
             </ul>
           </div>
         </section>
