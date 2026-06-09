@@ -5,6 +5,7 @@ const specialties = [
   "AI Enablement",
   "AI Management",
   "AI Governance",
+  "Business Architecture",
 ];
 
 
