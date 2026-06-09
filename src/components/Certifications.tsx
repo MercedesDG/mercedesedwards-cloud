@@ -1,13 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 
+const leadershipCerts = [
+  { name: "Human Centered AI Leadership — AI-Powered Women", status: "In Progress" },
+];
+
 const cloudArchCerts = [
-  { name: "Certified GRC Engineer – Practitioner — GRC Engineering Club", status: "In Progress" },
+  { name: "Certified GRC Engineer – Practitioner — GRC Engineering Club", status: "Planned" },
   { name: "Terraform Associate (004) — HashiCorp", status: "Planned" },
 ];
 
 const privacyGovCerts = [
   { name: "Artificial Intelligence Governance Professional (AIGP) — IAPP", status: "In Progress" },
-  { name: "ISO/IEC 42001 Lead Auditor — MasterMind", status: "Planned" },
+  { name: "ISO/IEC 42001 Lead Auditor — MasterMind", status: "In Progress" },
   { name: "ISO/IEC 27701 Lead Auditor — MasterMind", status: "Planned" },
   { name: "ISO/IEC 27001 Lead Auditor — Exemplar Global | GRC Mastery", status: "Complete" },
   { name: "Conversational AI: Ensuring Compliance and Mitigating Risks — Linux Foundation", status: "Complete" },
@@ -105,9 +109,10 @@ const Certifications = () => {
           Certifications
         </h2>
 
-        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={educationEntries.length} />
-        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length} />
-        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={educationEntries.length + privacyGovCerts.length + cloudArchCerts.length} />
+        <CertSection title="Leadership" certs={leadershipCerts} visible={visible} delayOffset={educationEntries.length} />
+        <CertSection title="AI Governance, Risk & Compliance" certs={privacyGovCerts} visible={visible} delayOffset={educationEntries.length + leadershipCerts.length} />
+        <CertSection title="AI & Cloud Architecture" certs={cloudArchCerts} visible={visible} delayOffset={educationEntries.length + leadershipCerts.length + privacyGovCerts.length} />
+        <CertSection title="Process & Data" certs={processDataCerts} visible={visible} delayOffset={educationEntries.length + leadershipCerts.length + privacyGovCerts.length + cloudArchCerts.length} />
 
         <p className="font-sans text-xs text-muted-foreground mt-4 italic">
           *Professional Training
