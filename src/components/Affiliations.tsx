@@ -10,12 +10,12 @@ const affiliations = [
     logo: iappLogo,
   },
   {
-    name: "IASA Global | Women in Architecture (WIA)",
+    name: "IASA Global | Women in Architecture",
     status: "Member",
     logo: iasaLogo,
   },
   {
-    name: "AI-Powered Women | AIPW",
+    name: "AI-Powered Women",
     status: "Ambassador",
     logo: aipwLogo,
   },

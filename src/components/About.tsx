@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const specialties = [
-  "AI Governance",
-  "AI Operations & Observability",
-  "Agentic AI Controls",
+  "AI Lifecycle Adoption",
   "AI Enablement",
+  "AI Management",
+  "AI Governance",
 ];
 
 
@@ -31,23 +31,20 @@ const About = () => {
           About
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-10">
-          The Applied Governance Architect
+          The AI Business Architect
         </h2>
         <div className="space-y-6 font-sans text-lg sm:text-xl leading-relaxed text-muted-foreground">
           <p>
-            I am an AI governance professional who helps organizations securely govern, enable, and scale AI by translating regulatory and ethical obligations into system requirements, engineered controls, evidence pipelines, and practical guardrails for architecture and engineering teams. My work is applied AI governance, grounded in Compliance as Code, GRC engineering, and privacy-conscious architecture, focused on making complex systems auditable, defensible, and ready for scrutiny.
+            I work across the full AI adoption lifecycle — enablement, management, and governance — helping organizations adopt AI with structure, accountability, and strong business alignment.
           </p>
           <p>
-            My background spans enterprise IT consulting, process engineering, and digital transformation, where I have translated daunting business and regulatory requirements into operationally and technically sound controls. That experience now sits squarely in AI governance: understanding what exists, who owns it, what data it touches, and what obligations apply.
+            My background spans business analysis, process optimization, enterprise consulting, and AI adoption. I approach every engagement as people and business-first: understanding how the organization operates, how people work within it, where AI creates genuine value and risk, and what compliance structures need to be in place before, during, and after deployment. I have spent my career translating complex requirements into workable systems — first for business processes and enterprise platforms, now for AI adoption programs and compliance frameworks.
           </p>
           <p>
-            I often work in environments with ungoverned models, missing documentation, and regulatory exposure that no one has fully quantified yet. My role is to turn that reality into control frameworks, evidence structures, and workflows that teams can maintain long after implementation.
+            My portfolio addresses healthcare, manufacturing, and retail — industries where AI is already deployed and the governance has not caught up. I work with systems as they exist: ungoverned models in production, missing documentation, teams that need training, processes that need redesigning, and organizations that need an AI management program they can run once a consultant leaves.
           </p>
           <p>
-            I do not approach governance as a constraint layered on after the fact, but as the structure that lets innovation survive its first audit. My lens is simple: clear accountability, usable documentation, and infrastructure that supports compliance instead of relying on manual effort and good intentions.
-          </p>
-          <p className="text-foreground font-medium">
-            I am targeting roles in Miami and New York - with particular interest in AI governance roles that prioritize Compliance as Code and engineered system controls. Right to work in both the U.S. and U.K.
+            I believe compliance is not a constraint on innovation, but the structure that enables it — and allows it to survive its first audit.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 mt-10">
