@@ -1,23 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import iappLogo from "@/assets/iapp-logo.jpg";
-import iasaLogo from "@/assets/iasa-logo.png";
-import aipwLogo from "@/assets/aipw-logo.png";
 
 const affiliations = [
   {
     name: "IAPP — International Association of Privacy Professionals",
     status: "Member",
     logo: iappLogo,
-  },
-  {
-    name: "IASA Global | Women in Architecture",
-    status: "Member",
-    logo: iasaLogo,
-  },
-  {
-    name: "AI-Powered Women",
-    status: "Ambassador",
-    logo: aipwLogo,
   },
 ];
 
