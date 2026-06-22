@@ -7,16 +7,6 @@ const affiliations = [
     status: "Member",
     logo: iappLogo,
   },
-  {
-    name: "IASA Global | Women in Architecture",
-    status: "Member",
-    logo: iasaLogo,
-  },
-  {
-    name: "AI-Powered Women",
-    status: "Ambassador",
-    logo: aipwLogo,
-  },
 ];
 
 const Affiliations = () => {
