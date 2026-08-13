@@ -16,7 +16,7 @@ const Footer = () => (
         Mercedes D. Edwards
       </h2>
       <p className="font-sans text-xl text-muted-foreground mb-10 max-w-lg mx-auto">
-        AI Governance Practitioner Turning AI Governance from Policy into Practice
+        Turning AI Governance from Policy to Practice
       </p>
       <div className="flex items-center justify-center gap-8 mb-16">
         <a
